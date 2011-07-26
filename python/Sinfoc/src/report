@@ -1,0 +1,11 @@
+Test Report.
+================================
+[testClientSide]
+Pass: 27 Fail: 22 Skip: 0 Error: 0  (55.1%)
+
+[testServerSide]
+Pass: 45 Fail: 4 Skip: 0 Error: 0  (91.84%)
+
+[Total]
+Pass: 72 Fail: 26 Skip: 0 Error: 0  (73.47%)
+

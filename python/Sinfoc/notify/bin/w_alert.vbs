@@ -1,0 +1,1 @@
+msgbox "There is new MSG!" ,64, "Alert"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.hylps.com/tscan/filter"
+	xmlns:tns="http://www.hylps.com/tscan/filter" elementFormDefault="qualified">
+
+
+	<complexType name="filter">
+		<sequence>
+			<element name="group" type="tns:group" minOccurs="0"
+				maxOccurs="unbounded">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="group">
+		<sequence>
+			<element name="rule" type="tns:rule" minOccurs="1" maxOccurs="unbounded"></element>
+		</sequence>
+		<attribute name="id" type="string" use="required"></attribute>
+	</complexType>
+
+	<element name="tscan" type="tns:tscanConfig"></element>
+
+	<complexType name="tscanConfig">
+		<sequence>
+			<element name="version" type="string" minOccurs="1"
+				maxOccurs="1">
+			</element>
+			<element name="condition" type="tns:condition" minOccurs="1"
+				maxOccurs="unbounded">
+			</element>
+			<element name="filter" type="tns:filter" minOccurs="0"
+				maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="condition">
+		<sequence>
+			<element name="name" type="string" minOccurs="1" maxOccurs="1">
+			</element>
+			<element name="type" type="string" minOccurs="1" maxOccurs="1">
+			</element>
+			<element name="value" type="string" minOccurs="1" maxOccurs="1">
+			</element>
+			<element name="desc" type="string" minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="rule">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="type" type="string"></attribute>
+			</extension>
+		</simpleContent>
+	</complexType>
+</schema>

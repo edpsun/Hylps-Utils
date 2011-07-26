@@ -1,0 +1,1 @@
+print "[INFO] init wm module"

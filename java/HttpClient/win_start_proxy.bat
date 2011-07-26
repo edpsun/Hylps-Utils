@@ -1,0 +1,1 @@
+java -cp lib\commons-codec-1.2.jar;lib\commons-httpclient-3.0.jar;lib\commons-logging-api.jar;lib\commons-logging.jar;lib\tuzi.jar -DDEBUG_MODE=false  -DSCAN_TIME=20 -DUSE_NOTIFY_FILTER=true  -DUSE_HTTP_PROXY=true  -DHTTP_PROXY_HOST=www-proxy.cn.oracle.com  -DHTTP_PROXY_PORT=80 com.hylps.tscan.WatchManager

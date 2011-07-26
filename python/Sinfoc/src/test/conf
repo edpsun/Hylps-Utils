@@ -1,0 +1,48 @@
+pool_ext__s1dom,oracle_10.2.10__oracle_10g,[Dante] Connection Hang Handling
+pool_ext__s1dom,oraclerac_10g__oracle_ds_10g    ,[Dante] Oracle RAC FCF
+jdbc4__s1dom ,oracle_11g__oracle_11g_thin     ,[Essex] JDBC4 Test
+ ,oracle_11g__oracle_11g_oci      ,
+apis4fmw__s1dom,oracle_11g__oracle_11g_thin     ,[Farallon] APIs for FMW Test
+ ,db2_9__datadirect_db2_owls      ,
+mds4racsvc__cs3dom ,oraclerac_3n11g__oracle_rac_svc ,[Farallon] Test MDS for RAC SVC
+security__cs3dom ,oracle_11g__oracle_11g_thin,[C2T] Security Test
+rowset__s1dom,oracle_11g__oracle_11g_thin,[C2T] Rowset Test
+,oracle_11g__oracle_11g_oci,
+,db2_9__datadirect_db2_owls,
+,sybase_15__datadirect_sybase_owls,
+,sybase_15__sybase_jconnect6,
+,mssql_2005__datadirect_mssql_owls,
+,informix_9__datadirect_informix_owls,
+,mysql_5__mysql,
+,pointbase_5__pointbase,
+,derby_10__derby,
+appscope_cm__s1dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+appscope_cm__cs2dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+appscope_bm__s1dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+appscope_bm__cs2dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+appscope_client__s1dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+appscope_client__cs2dom,oracle_11g__oracle_11g_thin,[C2T] App scope test
+console__s1dom,oracle_11g__oracle_11g_thin,[C2T] Console test
+deployable__s1dom,oracle_11g__oracle_11g_thin,[C2T] Test for deploying DS as App
+pool_jta__s1dom,oracle_11g__oracle_11g_thin,[C2T] WLS JTA driver test
+,oracle_11g__oracle_11g_oci      ,
+pool__s1dom,oracle_11g__oracle_11g_thin ,[C2T] JDBC Api/Wrapper test 
+,oracle_11g__oracle_11g_oci ,
+,db2_9__datadirect_db2_owls ,
+,sybase_15__datadirect_sybase_owls ,
+,sybase_15__sybase_jconnect6 ,
+,mssql_2005__datadirect_mssql_owls ,
+,informix_9__datadirect_informix_owls ,
+,mysql_5__mysql ,
+,pointbase_5__pointbase ,
+,derby_10__derby,
+datasource__s1dom,oracle_11g__oracle_11g_thin ,[C2T] Datasource related test
+,oracle_11g__oracle_11g_oci ,
+,db2_9__datadirect_db2_owls ,
+,sybase_15__datadirect_sybase_owls ,
+,sybase_15__sybase_jconnect6 ,
+,mssql_2005__datadirect_mssql_owls ,
+,informix_9__datadirect_informix_owls ,
+,mysql_5__mysql ,
+,pointbase_5__pointbase ,
+,derby_10__derby,

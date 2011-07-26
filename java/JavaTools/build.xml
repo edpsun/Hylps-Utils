@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="all" name="JavaTools">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property name="package.name" value="superBDA" />
+	<property name="script.name" value="superBDA.sh" />
+	<property name="dest.dir" value="buildout" />
+	<property name="intall.dir" value="/data/depot/config/utils/java/BDA2" />
+
+	<path id="JavaTools.classpath">
+		<pathelement location="lib/db4o-all.jar" />
+	</path>
+
+	<target name="init">
+		<mkdir dir="bin" />
+		<mkdir dir="${dest.dir}" />
+	</target>
+
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="${dest.dir}" />
+	</target>
+
+
+	<target name="build" depends="init">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+			<src path="src" />
+			<classpath refid="JavaTools.classpath" />
+		</javac>
+	</target>
+
+
+	<target name="package" depends="build">
+		<jar destfile="${package.name}.jar">
+			<fileset dir="bin">
+				<include name="edpsun/stock/basicdata/selector/**/*" />
+			</fileset>
+
+			<manifest>
+				<attribute name="Main-Class" value="edpsun.stock.basicdata.analyze.BasicDataAnalyzer" />
+			</manifest>
+		</jar>
+
+		<copy todir="${dest.dir}">
+			<fileset dir=".">
+				<include name="res/" />
+				<include name="lib/" />
+				<include name="${script.name}" />
+			</fileset>
+		</copy>
+
+		<move file="${package.name}.jar" todir="${dest.dir}/lib" />
+
+		<exec executable="date" output="${dest.dir}/buildtime.txt">
+		</exec>
+	</target>
+
+	<target name="install" depends="package">
+		<delete dir="${intall.dir}" />
+		<mkdir dir="${intall.dir}" />
+		<move todir="${intall.dir}">
+			<fileset dir="${dest.dir}" />
+		</move>
+
+		<exec executable="chmod">
+			<arg value="755" />
+			<arg value="${intall.dir}/${script.name}" />
+		</exec>
+	</target>
+
+	<target name="all" depends="clean,build,package">
+	</target>
+
+	<target name="package_bda2" depends="build">
+		<jar destfile="${package.name}.jar">
+			<fileset dir="bin">
+				<include name="edpsun/stock/basicdata/selector/**/*" />
+			</fileset>
+
+			<manifest>
+				<attribute name="Main-Class" value="edpsun.stock.basicdata.analyze.BasicDataAnalyzer" />
+			</manifest>
+		</jar>
+
+		<copy todir="${dest.dir}" file="${package.name}.jar">
+		</copy>
+	</target>
+
+
+
+
+</project>

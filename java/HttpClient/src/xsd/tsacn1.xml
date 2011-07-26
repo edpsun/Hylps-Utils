@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tscan xmlns:tns="http://www.hylps.com/tscan/filter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hylps.com/tscan/filter tsacn.xsd ">
+  <tns:version>tns:version</tns:version>
+  <tns:condition>
+    <tns:name>tns:name</tns:name>
+    <tns:type>tns:type</tns:type>
+    <tns:value>tns:value</tns:value>
+    <tns:desc>tns:desc</tns:desc>
+  </tns:condition>
+  <tns:filter>
+    <tns:group id="">
+      <tns:rule type="">tns:rule</tns:rule>
+    </tns:group>
+  </tns:filter>
+</tns:tscan>

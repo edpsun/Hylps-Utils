@@ -1,0 +1,10 @@
+*.log
+*.cmm
+*.men
+*.ini
+*.fig
+*.cmp
+*.tmp
+*.class
+*.pyc
+log*

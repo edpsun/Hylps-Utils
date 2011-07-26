@@ -1,0 +1,51 @@
+# if include any keyword below, the message will be refused
+INC:1-29
+INC:1-30
+
+# if include any keyword below, the message will be refused 
+EXC:T5
+EXC:D125
+EXC:D121
+EXC:硬座
+EXC:软座
+EXC:站票
+EXC:等座
+EXC:T167
+EXC:T157
+EXC:1121
+
+##################################################################
+# for kuxun
+# [keyword:K]=http://.....  
+
+# for huochepiao web
+# [keyword:H]=http://.....
+
+# for ganji
+# [keyword:G]=http://.....
+
+# for 58 tongcheng
+# [keyword:58]=http://....
+
+# for BX web
+# [keyword:BX]=http://....
+##################################################################
+
+[KX-武汉:K]=http://huoche.kuxun.cn/zhuanrang-beijing-wuhan.html?type=1
+
+[PW-汉口:H]=http://www.huochepiao.com.cn/search.asp?chufa=%B1%B1%BE%A9&daoda=%BA%BA%BF%DA&piaoyuan=%BB%F0%B3%B5%C6%B1%D4%B4%B2%E9%D1%AF
+[PW-武昌:H]=http://www.huochepiao.com.cn/search.asp?chufa=%B1%B1%BE%A9&daoda=%CE%E4%B2%FD&piaoyuan=%BB%F0%B3%B5%C6%B1%D4%B4%B2%E9%D1%AF
+
+[PM-汉口:HMAIN]=http://www.huochepiao.com/City/Search.asp?leixing=%D7%AA%C8%C3&chufa=%B1%B1%BE%A9&daoda=%BA%BA%BF%DA&psearch=%C6%B1%D4%B4%BC%EC%CB%F7
+[PM-武昌:HMAIN]=http://www.huochepiao.com/City/Search.asp?leixing=%D7%AA%C8%C3&chufa=%B1%B1%BE%A9&daoda=%CE%E4%B2%FD&psearch=%C6%B1%D4%B4%BC%EC%CB%F7
+
+[GJ-汉口:G]=http://bj.ganji.com/piao/zz_%E5%8C%97%E4%BA%AC-%E6%B1%89%E5%8F%A3/
+[GJ-武昌:G]=http://bj.ganji.com/piao/zz_%E5%8C%97%E4%BA%AC-%E6%AD%A6%E6%98%8C/
+
+[58-汉口:58]=http://www.58.com/huochepiao/beijing-hankou/
+[58-武昌:58]=http://www.58.com/huochepiao/beijing-hbwuchang/
+
+[BX-汉口:BX]=http://beijing.baixing.com/huochepiao/?%E5%8F%91%E8%BD%A6%E6%97%A5%E6%9C%9F=&%E8%BD%A6%E6%AC%A1=&%E5%87%BA%E5%8F%91%E5%9F%8E%E5%B8%82=%E5%8C%97%E4%BA%AC&%E5%88%B0%E8%BE%BE%E5%9F%8E%E5%B8%82=%E6%B1%89%E5%8F%A3
+[BX-武昌:BX]=http://beijing.baixing.com/huochepiao/?%E5%8F%91%E8%BD%A6%E6%97%A5%E6%9C%9F=&%E8%BD%A6%E6%AC%A1=&%E5%87%BA%E5%8F%91%E5%9F%8E%E5%B8%82=%E5%8C%97%E4%BA%AC&%E5%88%B0%E8%BE%BE%E5%9F%8E%E5%B8%82=%E6%AD%A6%E6%98%8C
+
+

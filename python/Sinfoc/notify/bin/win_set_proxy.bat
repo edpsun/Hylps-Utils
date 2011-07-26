@@ -1,0 +1,1 @@
+set http_proxy=http://www-proxy.cn.oracle.com:80

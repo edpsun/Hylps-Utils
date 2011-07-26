@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tscan xmlns="http://www.hylps.com/tscan/filter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hylps.com/tscan/filter tsacn.xsd ">
+	<version>0.1</version>
+
+	<!--
+		# for kuxun
+		# [keyword:K]=http://.....
+
+		# for huochepiao web
+		# [keyword:H]=http://.....
+
+		# for ganji
+		# [keyword:G]=http://.....
+
+		# for 58 tongcheng
+		# [keyword:58]=http://....
+
+		# for BX web
+		# [keyword:BX]=http://....
+	-->
+	<condition>
+		<name>BX-上海</name>
+		<type>BX</type>
+		<value>
+			<![CDATA[
+				http://beijing.baixing.com/huochepiao/?%E5%8F%91%E8%BD%A6%E6%97%A5%E6%9C%9F=&%E8%BD%A6%E6%AC%A1=&%E5%87%BA%E5%8F%91%E5%9F%8E%E5%B8%82=%E5%8C%97%E4%BA%AC&%E5%88%B0%E8%BE%BE%E5%9F%8E%E5%B8%82=%E4%B8%8A%E6%B5%B7
+			]]>
+		</value>
+	</condition>
+	<condition>
+		<name>GJ-上海</name>
+		<type>G</type>
+		<value>
+			<![CDATA[
+				http://bj.ganji.com/piao/zz_%E5%8C%97%E4%BA%AC-%E4%B8%8A%E6%B5%B7/
+			]]>
+		</value>
+	</condition>
+	<condition>
+		<name>58-上海</name>
+		<type>58</type>
+		<value>
+			<![CDATA[
+				http://www.58.com/huochepiao/beijing-shanghai/
+			]]>
+		</value>
+	</condition>
+	<condition>
+		<name>KX-上海</name>
+		<type>K</type>
+		<value>
+			<![CDATA[
+				http://huoche.kuxun.cn/zhuanrang-beijing-shanghai.html
+			]]>
+		</value>
+	</condition>
+	<condition>
+		<name>PW-上海</name>
+		<type>H</type>
+		<value>
+			<![CDATA[
+				http://www.huochepiao.com.cn/search.asp?chufa=%B1%B1%BE%A9&daoda=%C9%CF%BA%A3&piaoyuan=%BB%F0%B3%B5%C6%B1%D4%B4%B2%E9%D1%AF
+			]]>
+		</value>
+	</condition>
+	<condition>
+		<name>PM-上海</name>
+		<type>HMAIN</type>
+		<value>
+			<![CDATA[
+				http://www.huochepiao.com/city/Search.asp?leixing=%D7%AA%C8%C3&chufa=%B1%B1%BE%A9&daoda=%C9%CF%BA%A3
+			]]>
+		</value>
+		<desc>bejing to shanghai</desc>
+	</condition>
+
+	<filter>
+		<group id="1">
+			<rule type="include">卧</rule>
+			<rule type="exclude">1-31</rule>
+		</group>
+
+		<group id="2">
+			<rule type="include">1-29</rule>
+			<rule type="exclude">硬卧</rule>
+			<rule type="exclude">T49</rule>
+		</group>
+	</filter>
+</tscan>
