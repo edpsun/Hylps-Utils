@@ -7,8 +7,8 @@ require_relative 'cscontrol'
 require_relative 'csscreen'
 
 begin
-  $log = Logger.new("view.log")
-  $log.level = Logger::INFO
+  $log = Logger.new("cs.log")
+  $log.level = Logger::DEBUG
 
   $log.info("[INFO] CS running debug mode") if CS.debug_mode?
 

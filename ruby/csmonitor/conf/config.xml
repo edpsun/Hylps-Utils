@@ -147,13 +147,16 @@
         <name>广州国光</name>
       </stock>
       <stock>
-        <id>sz000751</id>
-        <name>锌业</name>
+        <id>sh600206</id>
+        <name>有研硅股</name>
+        <star>*</star>
+        <condition><![CDATA[ stock.price < 15.0 ]]></condition>
       </stock>
 
       <stock>
-        <id>sh600572</id>
-        <name>康恩贝</name>
+        <id>sz002097</id>
+        <name>山河智能</name>
+        <star>*</star>
       </stock>
 
     </group>
@@ -206,20 +209,16 @@
       <stock>
         <id>sz002011</id>
         <name>盾安环保</name>
+        <star>*</star>
       </stock>
       <stock>
         <id>sz002054</id>
         <name>德美化工</name>
       </stock>
-      <stock>
-        <id>sz002097</id>
-        <name>山河智能</name>
-        <star>*</star>
-      </stock>
+
       <stock>
         <id>sh600590</id>
         <name>泰豪科技</name>
-        <star>*</star>
       </stock>
       <stock>
         <id>sz002156</id>
@@ -241,23 +240,38 @@
         <name>传化股份</name>
         <star>*</star>
       </stock>
-      
+
       <stock>
         <id>sz000507</id>
         <name>珍珠港</name>
         <star>*</star>
         <condition><![CDATA[ stock.price < 11.0 ]]></condition>
       </stock>
-      
+
+
       <stock>
-        <id>sh600206</id>
-        <name>有研硅股</name>
+        <id>sh600290</id>
+        <name>华仪电气</name>
         <star>*</star>
-        <condition><![CDATA[ stock.price < 15.0 ]]></condition>
       </stock>
-      
-      
-      
+
+      <stock>
+        <id>sz000700</id>
+        <name>模塑科技</name>
+        <star>*</star>
+      </stock>
+
+      <stock>
+        <id>sz002218</id>
+        <name>拓日新能</name>
+        <star>*</star>
+      </stock>
+
+      <stock>
+        <id>sh600572</id>
+        <name>康恩贝</name>
+      </stock>
+
     </group>
 
   </watch>

@@ -31,6 +31,7 @@ cd $exec_home
 if [ "${NP}" = "false" ]
 then
 	echo "no proxy"
+	unset http_proxy https_proxy
 else
 	echo "set proxy"
 	proxy_file="${exec_home}/lnx_set_proxy.sh"
@@ -40,7 +41,7 @@ else
 	fi
 fi
 
->./view.log
+>./cs.log
 ruby csmonitor.rb $@
 
 echo "*********************************************"

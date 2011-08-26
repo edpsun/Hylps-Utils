@@ -234,10 +234,23 @@ module CS
       Net::HTTP.version_1_2
 
       ret_data =''
-      if proxy
-        ret_data = Net::HTTP::Proxy(proxy.host, proxy.port, proxy.user, proxy.password).get(URI.parse(URI.escape(url)))
-      else
-        ret_data = Net::HTTP.get(URI.parse(URI.escape(url)))
+      begin
+        @retry = true
+        if proxy
+          $log.debug("Using proxy: %s " % proxy)
+          ret_data = Net::HTTP::Proxy(proxy.host, proxy.port, proxy.user, proxy.password).get(URI.parse(URI.escape(url)))
+        else
+          $log.debug("NOT using proxy!")
+          ret_data = Net::HTTP.get(URI.parse(URI.escape(url)))
+        end
+
+      rescue TimeoutError
+        if @retry then
+          @retry = false
+          retry
+        else
+        raise
+        end
       end
 
       return Iconv.conv("UTF-8", "GBK", ret_data)
@@ -406,6 +419,10 @@ module CS
     end
 
     def eval_condition stock, condition
+      if stock.stop
+        return false
+      end
+
       begin
         return eval(condition)
       rescue
@@ -523,6 +540,7 @@ module CS
             end
 
             Thread.current["new_assert"] = false
+
           else
             sleep(5)
           end
