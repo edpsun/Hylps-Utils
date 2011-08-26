@@ -58,7 +58,7 @@
       <file leaf-file-name="csmanager.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csmanager.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="38" selection-start="6057" selection-end="6057" vertical-scroll-proportion="-15.28">
+            <state line="242" column="38" selection-start="6057" selection-end="6057" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,6 +73,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="csscreen.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csscreen.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="33" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.54761904">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="debug.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debug.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="install.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="54" selection-start="64" selection-end="64" vertical-scroll-proportion="0.023809524">
+            <state line="1" column="54" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,13 +137,13 @@
         <option value="$PROJECT_DIR$/cscontrol.rb" />
         <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/tmp/t2.rb" />
-        <option value="$PROJECT_DIR$/csscreen.rb" />
         <option value="$PROJECT_DIR$/test/config.xml" />
         <option value="$PROJECT_DIR$/conf/config.xml" />
         <option value="$PROJECT_DIR$/csmonitor.rb" />
         <option value="$PROJECT_DIR$/csmanager.rb" />
         <option value="$PROJECT_DIR$/cs_monitor.sh" />
         <option value="$PROJECT_DIR$/debug.sh" />
+        <option value="$PROJECT_DIR$/csscreen.rb" />
       </list>
     </option>
   </component>
@@ -164,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,6 +271,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -280,15 +289,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="941" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -620,42 +629,40 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csscreen.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csmonitor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csmanager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="38" selection-start="6057" selection-end="6057" vertical-scroll-proportion="-15.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs_monitor.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="587" selection-end="615" vertical-scroll-proportion="0.0">
+        <state line="242" column="38" selection-start="6057" selection-end="6057" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/debug.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="33" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="54" selection-start="64" selection-end="64" vertical-scroll-proportion="0.023809524" />
+        <state line="1" column="54" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs_monitor.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="587" selection-end="615" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csmonitor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csscreen.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="33" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.54761904">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

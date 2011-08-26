@@ -51,7 +51,7 @@
 
     <param>
       <name>local_info_url</name>
-      <value>/data/depot/share/vs/data/report_own/choose</value>
+      <value>/data/depot/share/vs/data/own/report/choose</value>
     </param>
 
     <param>

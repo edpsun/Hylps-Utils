@@ -66,7 +66,7 @@ end
 
 module CS
   class Screen
-    Global_Notify_Msg = "q b M-b  d C-L"
+    Global_Notify_Msg = "q b B d C-L"
     Notify_Msg_Sep_Count = 3
 
     def initialize (win, verbose=false)
