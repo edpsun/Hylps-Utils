@@ -68,10 +68,20 @@
         <id>sh000001</id>
         <name>上证综指</name>
       </stock>
+      
+      <stock>
+        <id>sh000300</id>
+        <name>沪深300</name>
+      </stock>
 
       <stock>
         <id>sz399001</id>
         <name>深圳成指</name>
+      </stock>
+      
+      <stock>
+        <id>sz399005</id>
+        <name>中小板指</name>
       </stock>
 
       <stock>
@@ -89,7 +99,6 @@
       <stock>
         <id>sh601898</id>
         <name>中煤能源</name>
-
       </stock>
       <stock>
         <id>sh600000</id>
@@ -103,7 +112,6 @@
         <id>sh601857</id>
         <name>中国石油</name>
       </stock>
-
     </group>
 
     <group>
@@ -113,8 +121,8 @@
         <id>sh600036</id>
         <name>招商银行</name>
 
-        <condition><![CDATA[ stock.price > 14 || stock.price < 12 ]]></condition>
-        <condition><![CDATA[ @once@ stock.low < 12 ]]></condition>
+        <condition><![CDATA[ stock.price > 14 || stock.price < 10.95 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 11 ]]></condition>
       </stock>
       <stock>
         <id>sh601919</id>
@@ -127,8 +135,8 @@
       <stock>
         <id>sh600256</id>
         <name>广汇股份</name>
-        <condition><![CDATA[ stock.price > 27.8  ]]></condition>
-        <condition><![CDATA[ @once@ stock.high > 28 ]]></condition>
+        <condition><![CDATA[ stock.price > 26.8  ]]></condition>
+        <condition><![CDATA[ @once@ stock.high > 27 ]]></condition>
       </stock>
       <stock>
         <id>sz002139</id>
@@ -137,10 +145,12 @@
       <stock>
         <id>sh600059</id>
         <name>古越龙山</name>
+        <condition><![CDATA[ stock.price > 13.5 ]]></condition>
       </stock>
       <stock>
         <id>sz002144</id>
         <name>宏达高科</name>
+        <condition><![CDATA[ stock.price > 15.9 ]]></condition>
       </stock>
       <stock>
         <id>sz002045</id>
@@ -149,8 +159,9 @@
       <stock>
         <id>sh600206</id>
         <name>有研硅股</name>
+        <condition><![CDATA[ stock.price < 13.95 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 13.9 ]]></condition>
         <star>*</star>
-        <condition><![CDATA[ stock.price < 15.0 ]]></condition>
       </stock>
 
       <stock>
@@ -168,11 +179,7 @@
         <id>sz002129</id>
         <name>中环股份</name>
       </stock>
-      <stock>
-        <id>sh600527</id>
-        <name>江南高纤</name>
-      </stock>
-
+      
       <stock>
         <id>sh600605</id>
         <name>汇通能源</name>
@@ -180,6 +187,7 @@
       <stock>
         <id>sz002009</id>
         <name>天奇股份</name>
+        <star>*</star>
       </stock>
       <stock>
         <id>sz000951</id>
@@ -190,32 +198,21 @@
         <name>康美药业</name>
       </stock>
       <stock>
-        <id>sz002157</id>
-        <name>正邦科技</name>
-      </stock>
-      <stock>
         <id>sh600201</id>
         <name>金宇集团</name>
+        <star>*</star>
       </stock>
       <stock>
         <id>sh600605</id>
         <name>汇通能源</name>
       </stock>
       <stock>
-        <id>sz000061</id>
-        <name>农产品</name>
-        <desc>desc</desc>
-      </stock>
-      <stock>
         <id>sz002011</id>
         <name>盾安环保</name>
-        <star>*</star>
+        <star>***</star>
+        <condition><![CDATA[ stock.price < 12.7 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 12.6 ]]></condition>
       </stock>
-      <stock>
-        <id>sz002054</id>
-        <name>德美化工</name>
-      </stock>
-
       <stock>
         <id>sh600590</id>
         <name>泰豪科技</name>
@@ -238,21 +235,23 @@
       <stock>
         <id>sz002010</id>
         <name>传化股份</name>
-        <star>*</star>
+        <star>***</star>
       </stock>
 
       <stock>
         <id>sz000507</id>
         <name>珍珠港</name>
         <star>*</star>
-        <condition><![CDATA[ stock.price < 11.0 ]]></condition>
+        <condition><![CDATA[ stock.price < 12.0 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 12 ]]></condition>
       </stock>
-
 
       <stock>
         <id>sh600290</id>
         <name>华仪电气</name>
         <star>*</star>
+        <condition><![CDATA[ stock.price < 9.6 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 9.5 ]]></condition>
       </stock>
 
       <stock>
@@ -266,10 +265,13 @@
         <name>拓日新能</name>
         <star>*</star>
       </stock>
-
+      
       <stock>
-        <id>sh600572</id>
-        <name>康恩贝</name>
+        <id>sz002182</id>
+        <name>云海金属</name>
+        <condition><![CDATA[ stock.price < 7 ]]></condition>
+        <condition><![CDATA[ @once@ stock.low < 7 ]]></condition>
+        <star>*</star>
       </stock>
 
     </group>
