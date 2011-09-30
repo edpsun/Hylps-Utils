@@ -13,7 +13,7 @@ export CLASSPATH
 export JAVA_OPT="-DDEBUG_MODE=true \
 -DUSE_NOTIFY_FILTER=true \
 -DSCAN_TIME=9 \
--DUSE_HTTP_PROXY=true \
+-DUSE_HTTP_PROXY=false \
 -DHTTP_PROXY_HOST=www-proxy.us.oracle.com \
 -DHTTP_PROXY_PORT=80"
 

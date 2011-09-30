@@ -39,21 +39,24 @@ begin
     screen.set_notify_msg("UT: "+t.strftime("%H:%M:%S"))
     screen.append_notify_msg("Interval: " + sleep_time)
 
-    if controller.need_refresh? || show_1st_time
-      data_controller.verbose= controller.verbose?
-      screen.verbose= controller.verbose?
+    begin
+      if controller.need_refresh? || show_1st_time
+        data_controller.verbose= controller.verbose?
+        screen.verbose= controller.verbose?
 
-      show_1st_time = false
-      screen.show_header(" "+data_controller.get_header())
-      data_pair = data_controller.refresh_data
-      screen.refill_data(data_pair)
+        show_1st_time = false
+        screen.show_header(" "+data_controller.get_header())
+        data_pair = data_controller.refresh_data
+        screen.refill_data(data_pair)
 
-      screen.append_notify_msg("State: Open #{cols}x#{lines}")
-      screen.refresh
-    else
-      screen.append_notify_msg("State: Close")
+        screen.append_notify_msg("State: Open #{cols}x#{lines}")
+        screen.refresh
+      else
+        screen.append_notify_msg("State: Close")
+      end
+    rescue Exception => e
+      $log.error(e)
     end
-
     sleep(sleep_time.to_i)
   end
 

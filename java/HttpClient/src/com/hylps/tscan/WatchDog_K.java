@@ -25,15 +25,17 @@ public class WatchDog_K extends WatchDog {
 	private String tickLineKeyWord = "leads.php";
 	private int check_loop = -1;
 
-	String linkRex = "href=\'(.*?)\'>";
+	String linkRex = "href=\"(.*?)\">";
 	Pattern linkPattern = Pattern.compile(linkRex);
-	String captionRex = "class=\"col_11 left\">(.*)<br />";
+	String captionRex = "<div class=\"down_1\">(.*)<br />.*$";
 	Pattern captionPattern = Pattern.compile(captionRex);
 
 	public WatchDog_K() {
 
 	}
 
+	String d1 = "down_1";
+	String d2 = "down_2";
 	protected TicketObj[] getNewTicketLines() {
 		ArrayList<TicketObj> newLines = new ArrayList<TicketObj>();
 
@@ -45,18 +47,29 @@ public class WatchDog_K extends WatchDog {
 			br = new BufferedReader(new InputStreamReader(input, "UTF-8"));
 			String line = null;
 			boolean hasKeyWord = false;
-
+			
+			StringBuilder sb = new StringBuilder();
 			TicketObj to = null;
 			while ((line = br.readLine()) != null) {
+				
 				line = line.trim();
-				if (line.indexOf(tickLineKeyWord) > -1) {
-					hasKeyWord = true;
-
-					String[] messages = attractTicketInfo(line);
+				if (line.indexOf(d1) > -1) {
+					sb.setLength(0);
+					sb.append(line);
+					
+					line = br.readLine();//skip one
+					line = br.readLine();
+					
+					if (line!=null){
+						sb.append(line);
+						hasKeyWord = true;
+					}
+					
+					
+					String[] messages = attractTicketInfo(sb.toString());
 					to = new TicketObj(messages);
-					//String realurl = kuh.getRealUrl(messages[1]);
-					//line = line.replace(messages[1], realurl);
-
+					
+					
 					if (firstScan) {
 						//just start
 						if (pool.size() < poolSize) {

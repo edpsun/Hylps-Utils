@@ -170,6 +170,8 @@ public abstract class WatchDog extends Thread {
 		System.out.println(output.toString());
 	}
 
+	String spaces = "------------------------------";
+
 	protected void checkUrl() {
 
 		TicketObj[] newlines = getNewTicketLines();
@@ -187,6 +189,8 @@ public abstract class WatchDog extends Thread {
 				}
 				System.out.println(sb.toString());
 			}
+		} else {
+			System.out.print("Refreshing -------[" + condition.getType() + "]" + condition.getName() + spaces + "\r");
 		}
 
 		//		//debug:
@@ -337,8 +341,12 @@ public abstract class WatchDog extends Thread {
 		try {
 			input = httpHelper.getUrl(condition.getValue(), new Header[] { h1, h2 });
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("[INFO] Retry....");
+			if (isDebugMode) {
+				e.printStackTrace();
+				System.out.println("[INFO] Retry " + url);
+			} else {
+				System.out.println("[Error] while get page content: " + e.getMessage() + "  -> Retry  " + url);
+			}
 			input = httpHelper.getUrl(condition.getValue(), new Header[] { h1, h2 });
 		}
 		return input;
