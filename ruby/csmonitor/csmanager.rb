@@ -142,6 +142,9 @@ module CS
 
         stock.desc = (st.elements['desc'] == nil ? nil :st.elements['desc'].text)
         stock.star = (st.elements['star'] == nil ? nil :st.elements['star'].text)
+        stock.cost = (st.elements['cost'] == nil ? nil :st.elements['cost'].text)
+        stock.cost_warn = (st.elements['cost_warn'] == nil ? nil :st.elements['cost_warn'].text)
+
 
         conditions = []
         st.elements.each("condition") { |e|
@@ -312,7 +315,7 @@ module CS
 
   class DataController
     #serial,name,price,ipct,increase,low,high,last_day,symbol
-    ST_LINE_PATTERN = "%3s %-25s %-10s %3s %-10s %-10s %-10s %-10s %-10s %-11s"
+    ST_LINE_PATTERN = "%3s %-25s %-10s %3s %-10s %-10s %-10s %-10s %-10s %-11s %-7s"
     PATTERN_CONDITION_INSTRUCT = /.*@(.*)@(.*)/i
 
     def initialize
@@ -333,9 +336,9 @@ module CS
 
     def get_header
       if @verbose
-        sprintf(ST_LINE_PATTERN, "id", "　　name　　", :price, '*', :ipct, :increase, :low, :high, :last_day, "+/-")
+        sprintf(ST_LINE_PATTERN, "id", "　　name　　", :price, '*', :ipct, :increase, :low, :high, :last_day, "+/-",'')
       else
-        sprintf(ST_LINE_PATTERN, "", :n, :p, '*', :ipct, :is, :l, :h, :last, "+/-")
+        sprintf(ST_LINE_PATTERN, "", :n, :p, '*', :ipct, :is, :l, :h, :last, "+/-",'')
       end
     end
 
@@ -365,6 +368,10 @@ module CS
 
         sublist.each do |st|
           i = i +1
+
+          cf_st = @cm.get_stock (st.id)
+          st.stock_config = cf_st if cf_st
+
           str = format_st_data(i, st)
 
           if st.stop
@@ -444,6 +451,18 @@ module CS
         symbol = "."* (os_st.incr_pct.to_int + 1)
       end
 
+       if(os_st.stock_config && os_st.stock_config.cost)
+        cost = os_st.stock_config.cost.to_f
+        cost = ((os_st.price - cost) * 100 /cost).round(2)
+        profit_pct = cost.to_s + '%'
+
+        if cost < -0.1 && os_st.stock_config.cost_warn != 'false'
+           os_st.has_alert = true
+        end
+      else
+        profit_pct = ''
+      end
+
       if (@verbose || os_st.has_alert)
         symbol = os_st.up == true ? symbol.gsub('.', '↗') :symbol.gsub('.', '↘')
       end
@@ -455,7 +474,7 @@ module CS
 
       pct = sprintf("%s%s%", (os_st.increase >= 0 ? '' :'-'), os_st.incr_pct)
       str = sprintf(ST_LINE_PATTERN, i, name, os_st.price, os_st.star, pct, os_st.increase, \
-      os_st.low, os_st.high, os_st.last_day, symbol)
+      os_st.low, os_st.high, os_st.last_day, symbol,profit_pct)
 
       cf_st = @cm.get_stock(os_st.id)
 

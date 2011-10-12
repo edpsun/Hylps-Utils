@@ -35,7 +35,7 @@ class RubyCurses::Listbox
   end
 
   def cell_renderer_acc(*val)
-    if (val[0].scan(/==/).size >= 1 || val[0].length ==0 || val[0].scan(/--/).size >= 1)
+    if ( (val[0].scan(/==/).size >= 1 && !val[0].include?('%c:') ) || val[0].length ==0 || val[0].scan(/--/).size >= 1)
       return cell_renderer()
     end
 

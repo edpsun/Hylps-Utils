@@ -62,6 +62,8 @@
             <element name="star" type="string" maxOccurs="1"
     			minOccurs="0">
     		</element>
+            <element name="cost" type="string" maxOccurs="1" minOccurs="0"></element>
+            <element name="cost_warn" type="string" maxOccurs="1" minOccurs="0"></element>
     		<element name="condition" type="string"
     			maxOccurs="unbounded" minOccurs="0">
     		</element>

@@ -122,10 +122,12 @@
       <stock>
         <id>sh601919</id>
         <name>中国远洋</name>
+        <cost>10.1%</cost>
       </stock>
       <stock>
         <id>sh600005</id>
         <name>武钢</name>
+        <cost>6.7</cost>
       </stock>
       <stock>
         <id>sh600256</id>

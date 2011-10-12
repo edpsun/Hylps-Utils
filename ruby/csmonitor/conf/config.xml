@@ -120,17 +120,22 @@
       <stock>
         <id>sh600036</id>
         <name>招商银行</name>
-
+        <cost>14.756</cost>
+        <cost_warn>false</cost_warn>
         <condition><![CDATA[ stock.price > 14 || stock.price < 10.95 ]]></condition>
         <condition><![CDATA[ @once@ stock.low < 11 ]]></condition>
       </stock>
       <stock>
         <id>sh601919</id>
         <name>中国远洋</name>
+        <cost>15.11</cost>
+        <cost_warn>false</cost_warn>
       </stock>
       <stock>
         <id>sh600005</id>
         <name>武钢</name>
+        <cost>6.627</cost>
+        <cost_warn>false</cost_warn>
       </stock>
       <stock>
         <id>sh600256</id>
@@ -141,24 +146,33 @@
       <stock>
         <id>sz002139</id>
         <name>拓邦股份</name>
+        <cost>21.297</cost>
+        <cost_warn>false</cost_warn>
       </stock>
       <stock>
         <id>sh600059</id>
         <name>古越龙山</name>
+        <cost>15.704</cost>
+        <cost_warn>false</cost_warn>
         <condition><![CDATA[ stock.price > 13.5 ]]></condition>
       </stock>
       <stock>
         <id>sz002144</id>
         <name>宏达高科</name>
+        <cost>16.259</cost>
+        <cost_warn>false</cost_warn>
         <condition><![CDATA[ stock.price > 15.9 ]]></condition>
       </stock>
       <stock>
         <id>sz002045</id>
         <name>广州国光</name>
+        <cost>10.264</cost>
+        <cost_warn>false</cost_warn>
       </stock>
       <stock>
         <id>sh600206</id>
         <name>有研硅股</name>
+        <cost>13.802</cost>
         <condition><![CDATA[ stock.price < 13.95 ]]></condition>
         <condition><![CDATA[ @once@ stock.low < 13.9 ]]></condition>
         <star>*</star>
@@ -167,6 +181,7 @@
       <stock>
         <id>sz002097</id>
         <name>山河智能</name>
+        <cost>11.86</cost>
         <star>*</star>
       </stock>
 

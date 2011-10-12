@@ -35,7 +35,7 @@ class ConfigManagerTest < Test::Unit::TestCase
   end
 
   def test_get_first_value
-    assert_equal("100", @cm.get_first_config_value('interval'))
+    assert_equal("10", @cm.get_first_config_value('interval'))
     assert_nil(@cm.get_first_config_value('KKK'))
     assert_nil(@cm.get_first_config_value('PPPP'))
   end
@@ -75,5 +75,10 @@ class ConfigManagerTest < Test::Unit::TestCase
   def test_get_stock_os_with_conditions
     list = @cm.get_stock_os_with_conditions
     assert_equal 4 , list.size
+  end
+
+  def test_get_stock
+    stock = @cm.get_stock('sh600005')
+    assert_not_nil(stock.cost)
   end
 end
