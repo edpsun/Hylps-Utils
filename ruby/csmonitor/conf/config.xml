@@ -138,12 +138,6 @@
         <cost_warn>false</cost_warn>
       </stock>
       <stock>
-        <id>sh600256</id>
-        <name>广汇股份</name>
-        <condition><![CDATA[ stock.price > 26.8  ]]></condition>
-        <condition><![CDATA[ @once@ stock.high > 27 ]]></condition>
-      </stock>
-      <stock>
         <id>sz002139</id>
         <name>拓邦股份</name>
         <cost>21.297</cost>
@@ -189,7 +183,11 @@
 
     <group>
       <name>watch</name>
-
+	  
+	  <stock>
+        <id>sh600256</id>
+        <name>广汇股份</name>
+      </stock>
       <stock>
         <id>sz002129</id>
         <name>中环股份</name>

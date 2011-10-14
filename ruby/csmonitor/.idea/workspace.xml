@@ -2,6 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/csmanager.rb" line="120" />
+    <bookmark url="file://$PROJECT_DIR$/tmp/t.rb" line="49" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b69eee-dfe0-4473-aeb7-c91f11611ae2" name="Default" comment="">
@@ -64,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="36" selection-start="4138" selection-end="4138" vertical-scroll-proportion="0.42677826">
+            <state line="181" column="69" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,16 +86,25 @@
       <file leaf-file-name="csmanager.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csmanager.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="458" column="56" selection-start="11570" selection-end="11570" vertical-scroll-proportion="4.84">
+            <state line="482" column="27" selection-start="12159" selection-end="12159" vertical-scroll-proportion="-7.92">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csscreen.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="csscreen.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csscreen.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="48" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+            <state line="43" column="28" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmp/t.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="870" selection-end="924" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +113,7 @@
       <file leaf-file-name="config_manager_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/config_manager_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="-12.0">
+            <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +141,6 @@
         <option value="$PROJECT_DIR$/test/data_manager.rb" />
         <option value="$PROJECT_DIR$/test/EBK/own.EBK" />
         <option value="$PROJECT_DIR$/test/stock_manager_test.rb" />
-        <option value="$PROJECT_DIR$/tmp/t.rb" />
         <option value="$PROJECT_DIR$/cscontrol.rb" />
         <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/tmp/t2.rb" />
@@ -141,9 +150,10 @@
         <option value="$PROJECT_DIR$/test/config_manager_test.rb" />
         <option value="$PROJECT_DIR$/test/config.xml" />
         <option value="$PROJECT_DIR$/conf/csmonitor.xsd" />
+        <option value="$PROJECT_DIR$/conf/config.xml" />
+        <option value="$PROJECT_DIR$/tmp/t.rb" />
         <option value="$PROJECT_DIR$/csmanager.rb" />
         <option value="$PROJECT_DIR$/csscreen.rb" />
-        <option value="$PROJECT_DIR$/conf/config.xml" />
       </list>
     </option>
   </component>
@@ -173,7 +183,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,6 +198,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="csmonitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csmonitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csmonitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -240,6 +263,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -257,15 +281,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="941" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -273,7 +297,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda.ConfigManagerTest">
+  <component name="RunManager" selected="Ruby.t">
     <configuration default="false" name="test_get_all_stock_os_list" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="csmonitor" />
@@ -477,7 +501,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="876" extended-state="6" />
+    <frame x="0" y="24" width="1680" height="876" extended-state="2" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,9 +509,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20880681" sideWeight="0.6701987" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19886364" sideWeight="0.6701987" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19842233" sideWeight="0.6701987" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980132" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -547,11 +571,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/string.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="8" selection-start="7555" selection-end="7555" vertical-scroll-proportion="0.44591612" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/file.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="440" column="13" selection-start="16116" selection-end="16116" vertical-scroll-proportion="0.0" />
@@ -589,56 +608,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csmonitor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="66" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="57" column="66" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/data_manager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="17" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/csmonitor.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="36" selection-start="2295" selection-end="2304" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="69" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/config_manager_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="-12.0">
+        <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/config.xml">
+    <entry file="file://$PROJECT_DIR$/tmp/t.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="17" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/csmonitor.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="36" selection-start="2295" selection-end="2304" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="870" selection-end="924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csmanager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="458" column="56" selection-start="11570" selection-end="11570" vertical-scroll-proportion="4.84">
+        <state line="482" column="27" selection-start="12159" selection-end="12159" vertical-scroll-proportion="-7.92">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csscreen.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="36" selection-start="4138" selection-end="4138" vertical-scroll-proportion="0.42677826">
+        <state line="43" column="28" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

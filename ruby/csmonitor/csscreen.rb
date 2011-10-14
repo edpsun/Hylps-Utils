@@ -19,6 +19,7 @@ class RubyCurses::Listbox
 
   dsl_accessor :to_print_borders
   Pattern_For_Nested_Color = /\[%c:(.*)\]/
+  UDES_Pattern = /\d%([A-Z])/
 
   def print_different_color=(b)
     @print_different_color=b
@@ -35,18 +36,20 @@ class RubyCurses::Listbox
   end
 
   def cell_renderer_acc(*val)
-    if ( (val[0].scan(/==/).size >= 1 && !val[0].include?('%c:') ) || val[0].length ==0 || val[0].scan(/--/).size >= 1)
-      return cell_renderer()
-    end
+    cell_render = nil
+    match_indicator = UDES_Pattern.match(val[0])
 
     color_pair = nil
-    if (val[0].scan(/-\d/).size == 2)
-      color_pair = @list_cell_down_color_pair if defined? @list_cell_down_color_pair
-    else
-      color_pair = @list_cell_up_color_pair if defined? @list_cell_up_color_pair
+    if (match_indicator)
+      case match_indicator[1]
+        when "D"
+          color_pair = @list_cell_down_color_pair if defined? @list_cell_down_color_pair
+        when "U"
+          color_pair = @list_cell_up_color_pair if defined? @list_cell_up_color_pair
+      end
     end
 
-      #'OOO s[%c:green]un PPP' => 'OOO sun PPP'
+    #'OOO s[%c:green]un PPP' => 'OOO sun PPP'
     md = Pattern_For_Nested_Color.match(val[0])
     if md
       bg = (color_pair == nil ? 'BLACK' :color_pair[1])
@@ -54,13 +57,14 @@ class RubyCurses::Listbox
       val[0].gsub!(Pattern_For_Nested_Color, '')
     end
 
-    if color_pair.nil?
-      return cell_renderer()
-    else
+    if  color_pair.nil?
+      return  cell_renderer()
+      else
       return RubyCurses::ListCellRenderer.new "", {"color"=>color_pair[0], "bgcolor"=>color_pair[1], \
       "parent" => self, "display_length"=> @width-2-@left_margin}
     end
   end
+
 end
 
 

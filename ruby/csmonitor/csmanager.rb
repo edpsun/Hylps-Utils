@@ -315,7 +315,7 @@ module CS
 
   class DataController
     #serial,name,price,ipct,increase,low,high,last_day,symbol
-    ST_LINE_PATTERN = "%3s %-25s %-10s %3s %-10s %-10s %-10s %-10s %-10s %-11s %-7s"
+    ST_LINE_PATTERN = "%3s %-25s %-10s %3s %-10s %-10s %-10s %-10s %-10s %-11s %+7s"
     PATTERN_CONDITION_INSTRUCT = /.*@(.*)@(.*)/i
 
     def initialize
@@ -443,15 +443,23 @@ module CS
 
     def format_st_data i, os_st
       symbol = ''
+      indicator=' ' # U up, D down, S stop, E equal
       if os_st.stop
         symbol = "s=="
+        indicator = "S"
       elsif os_st.increase == 0
         symbol = "=="
+        indicator = "E"
       else
+        if os_st.increase > 0
+          indicator = "U"
+        elsif os_st.increase < 0
+          indicator = "D"
+        end
         symbol = "."* (os_st.incr_pct.to_int + 1)
       end
 
-       if(os_st.stock_config && os_st.stock_config.cost)
+      if(os_st.stock_config && os_st.stock_config.cost && os_st.stop != true)
         cost = os_st.stock_config.cost.to_f
         cost = ((os_st.price - cost) * 100 /cost).round(2)
         profit_pct = cost.to_s + '%'
@@ -472,7 +480,7 @@ module CS
         name = os_st.name
       end
 
-      pct = sprintf("%s%s%", (os_st.increase >= 0 ? '' :'-'), os_st.incr_pct)
+      pct = sprintf("%s%s%%%s", (os_st.increase >= 0 ? '' :'-'), os_st.incr_pct, indicator)
       str = sprintf(ST_LINE_PATTERN, i, name, os_st.price, os_st.star, pct, os_st.increase, \
       os_st.low, os_st.high, os_st.last_day, symbol,profit_pct)
 
