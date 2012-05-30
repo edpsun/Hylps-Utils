@@ -228,7 +228,7 @@ module CS
 
     def request_str_data(list)
       require 'net/http'
-      require 'iconv'
+      #require 'iconv'
 
       url = @url_pattern + list.join(',')
       $log.debug(url)
@@ -256,7 +256,7 @@ module CS
         end
       end
 
-      return Iconv.conv("UTF-8", "GBK", ret_data)
+      return ret_data.encode(Encoding.find("UTF-8"),Encoding.find("GBK")) #Iconv.conv("UTF-8", "GBK", ret_data)
     end
 
     def parse_data(data)
@@ -464,7 +464,7 @@ module CS
         cost = ((os_st.price - cost) * 100 /cost).round(2)
         profit_pct = cost.to_s + '%'
 
-        if cost < -0.1 && os_st.stock_config.cost_warn != 'false'
+        if cost < -8.5 && os_st.stock_config.cost_warn != 'false'
            os_st.has_alert = true
         end
       else

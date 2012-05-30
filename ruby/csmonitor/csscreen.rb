@@ -19,7 +19,7 @@ class RubyCurses::Listbox
 
   dsl_accessor :to_print_borders
   Pattern_For_Nested_Color = /\[%c:(.*)\]/
-  UDES_Pattern = /\d%([A-Z])/
+  UDES_Pattern = /\d(%[A-Z])/
 
   def print_different_color=(b)
     @print_different_color=b
@@ -42,11 +42,12 @@ class RubyCurses::Listbox
     color_pair = nil
     if (match_indicator)
       case match_indicator[1]
-        when "D"
+        when "%D"
           color_pair = @list_cell_down_color_pair if defined? @list_cell_down_color_pair
-        when "U"
+        when "%U"
           color_pair = @list_cell_up_color_pair if defined? @list_cell_up_color_pair
       end
+      val[0].gsub!(match_indicator[1], '%')
     end
 
     #'OOO s[%c:green]un PPP' => 'OOO sun PPP'

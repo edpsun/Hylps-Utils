@@ -7,32 +7,21 @@
   <component name="ChangeListManager">
     <list default="true" id="72b69eee-dfe0-4473-aeb7-c91f11611ae2" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/EBK/flag.EBK" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/conf/EBK/own.EBK" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/conf/config.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/conf/csmonitor.xsd" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cs_monitor.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cscontrol.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/csmanager.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/csmonitor.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/csscreen.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/debug.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dict/Mandarin.dat" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lnx_set_proxy.sh" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/log_normal_assert" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/log_once_assert" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pinyin.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/rbcurse" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/EBK/flag.EBK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/EBK/own.EBK" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/config.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/config_manager_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/data_manager.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/st_info_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/stock_manager_test.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/t.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/t2.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/view.log" afterPath="" />
     </list>
     <ignored path="csmonitor.iws" />
@@ -46,7 +35,6 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-    <option name="REVERSE_PATCH" value="false" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -56,28 +44,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/config.xml">
+      <file leaf-file-name="cscontrol.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cscontrol.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="17" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.0">
+            <state line="4" column="19" selection-start="64" selection-end="77" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/config.xml">
+      <file leaf-file-name="csmonitor.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csmonitor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="69" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csmonitor.xsd" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/csmonitor.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="36" selection-start="2295" selection-end="2304" vertical-scroll-proportion="0.0">
+            <state line="1" column="110" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.0084034">
               <folding />
             </state>
           </provider>
@@ -86,34 +65,25 @@
       <file leaf-file-name="csmanager.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csmanager.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="482" column="27" selection-start="12159" selection-end="12159" vertical-scroll-proportion="-7.92">
+            <state line="190" column="47" selection-start="4876" selection-end="4876" vertical-scroll-proportion="-95.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csscreen.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/csscreen.rb">
+      <file leaf-file-name="jruby_extentions.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/jruby_extentions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="28" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
+            <state line="99" column="9" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="t.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmp/t.rb">
+      <file leaf-file-name="string.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/string.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="870" selection-end="924" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_manager_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/config_manager_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0">
+            <state line="1673" column="57" selection-start="69403" selection-end="69409" vertical-scroll-proportion="0.6333333">
               <folding />
             </state>
           </provider>
@@ -128,34 +98,38 @@
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
-      <array>
+      <list>
         <option value="sun" />
-      </array>
+      </list>
     </option>
-    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
-    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/data_manager.rb" />
-        <option value="$PROJECT_DIR$/test/EBK/own.EBK" />
         <option value="$PROJECT_DIR$/test/stock_manager_test.rb" />
         <option value="$PROJECT_DIR$/cscontrol.rb" />
         <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/tmp/t2.rb" />
         <option value="$PROJECT_DIR$/cs_monitor.sh" />
         <option value="$PROJECT_DIR$/debug.sh" />
-        <option value="$PROJECT_DIR$/csmonitor.rb" />
         <option value="$PROJECT_DIR$/test/config_manager_test.rb" />
         <option value="$PROJECT_DIR$/test/config.xml" />
         <option value="$PROJECT_DIR$/conf/csmonitor.xsd" />
         <option value="$PROJECT_DIR$/conf/config.xml" />
         <option value="$PROJECT_DIR$/tmp/t.rb" />
-        <option value="$PROJECT_DIR$/csmanager.rb" />
         <option value="$PROJECT_DIR$/csscreen.rb" />
+        <option value="$PROJECT_DIR$/tmp/testrb.rb" />
+        <option value="$PROJECT_DIR$/nbc/ncursesw.rb" />
+        <option value="$PROJECT_DIR$/csmanager.rb" />
+        <option value="$PROJECT_DIR$/csmonitor.rb" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="24" />
+    <option name="width" value="1440" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -183,6 +157,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,70 +185,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csmonitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EBK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,19 +200,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="139" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="http.proxy" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="941" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="941" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -298,6 +221,151 @@
     </key>
   </component>
   <component name="RunManager" selected="Ruby.t">
+    <configuration default="false" name="t" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="csmonitor" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/tmp" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/tmp/t.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="t2" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="csmonitor" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/tmp" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/tmp/t2.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Ruby.t" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.t2" />
+    </list>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="test_get_all_stock_os_list" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="csmonitor" />
@@ -352,46 +420,6 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="t" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="csmonitor" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/tmp" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/tmp/t.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="t2" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="csmonitor" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/tmp" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/tmp/t2.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="ConfigManagerTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="csmonitor" />
@@ -419,56 +447,6 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
-      <module name="" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <method />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda.test_get_all_stock_os_list" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda.test_get_stock_os_with_conditions" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.t" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.t2" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda.ConfigManagerTest" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StructureViewFactory">
@@ -501,16 +479,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1680" height="876" extended-state="2" />
+    <frame x="0" y="24" width="1440" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20880681" sideWeight="0.6701987" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19842233" sideWeight="0.6701987" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20809248" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -518,9 +498,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -546,6 +530,13 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="RC3 - add external info support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -571,44 +562,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/file.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="440" column="13" selection-start="16116" selection-end="16116" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/t2.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="13" selection-start="1037" selection-end="1044" vertical-scroll-proportion="0.71939474" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/dir.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="1484" selection-end="1507" vertical-scroll-proportion="0.023383768" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cscontrol.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="64" selection-end="77" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="54" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs_monitor.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="4" selection-start="587" selection-end="615" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csmonitor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="66" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/data_manager.rb">
@@ -621,42 +577,74 @@
         <state line="129" column="17" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="69" selection-start="5916" selection-end="5916" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/csmonitor.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="36" selection-start="2295" selection-end="2304" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.xml">
+    <entry file="file://$PROJECT_DIR$/csscreen.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="69" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0">
+        <state line="49" column="41" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.8428899" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/t.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="870" selection-end="924" vertical-scroll-proportion="0.8084862">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/config_manager_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0">
+        <state line="80" column="37" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.8451835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/data/color.2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/file.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="472" column="13" selection-start="23542" selection-end="23542" vertical-scroll-proportion="0.33240998">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/t.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/jruby_extentions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="870" selection-end="924" vertical-scroll-proportion="0.0">
+        <state line="99" column="9" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1673" column="57" selection-start="69403" selection-end="69409" vertical-scroll-proportion="0.6333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csmanager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="27" selection-start="12159" selection-end="12159" vertical-scroll-proportion="-7.92">
+        <state line="190" column="47" selection-start="4876" selection-end="4876" vertical-scroll-proportion="-95.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csscreen.rb">
+    <entry file="file://$PROJECT_DIR$/cscontrol.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
+        <state line="4" column="19" selection-start="64" selection-end="77" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csmonitor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="110" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.0084034">
           <folding />
         </state>
       </provider>

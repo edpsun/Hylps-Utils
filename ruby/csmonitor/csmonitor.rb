@@ -1,4 +1,6 @@
 # encoding: utf-8
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/rb_ncurse') unless $LOAD_PATH.include?(File.dirname(__FILE__)+'/rb_ncurse')
+
 require 'ncursesw'
 require 'logger'
 require 'rbcurse'

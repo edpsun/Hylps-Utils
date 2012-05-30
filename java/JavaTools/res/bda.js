@@ -15,6 +15,8 @@
 	
 	var total = 0;
 	var exportList="";
+	var markList="[MARK]<br>";
+	var tipList="[TIP]<br>";
 	function doFilter(){
 		$('#listdiv').hide();
 		stockid = $(':input[name=stockid]').val();
@@ -29,6 +31,8 @@
 		
 		total = 0;
 		exportList="";
+		markList = "[MARK]<br>";
+		tipList="[TIP]<br>";
 		$('.stdiv').each(function(){
 		  filterDiv($(this),fdata);
 		});
@@ -110,16 +114,20 @@
 		}
 		//alert(show_by_tag +"::::"+ show_by_rate_min +"::::"+ show_by_rate_max +"::::"+ show_by_qnum_min +"::::"+ show_by_qnum_max);
 		if(show_by_id && show_by_tag && show_by_rate_min && show_by_rate_max && show_by_qnum_min && show_by_qnum_max){
+		  elid=div.attr('elid');
 		  div.show();
 		  total = total +1;
-		  exportList=exportList + div.attr('elid')+'<br>';
+		  exportList=exportList + elid +'<br>';
+		
+		  markList = markList +"0"+ elid +'=7<br>';
+		  tipList = tipList +"0"+ elid +'=Tags:' + div.attr('tags') +"#$hCRate:" + rate +"#$hQnum:" + qnum +"<br>";
 		}else{
 		  div.hide();
 		}
 	}
 	
 	function toggleStockList(event){
-		$('#listdiv').html(exportList);
+		$('#listdiv').html(exportList +"<br> <br> <br> <br> " + markList +"<br><br>" + tipList);
 		$('#listdiv').toggle();
 	}
 	
