@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cs xmlns="http://hylps.cs/csmonitor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hylps.cs/csmonitor csmonitor.xsd ">
+  <version>1.0</version>
+  <config>
+    <param>
+      <name>interval</name>
+      <value>10</value>
+    </param>
+
+    <param>
+      <name>verbose</name>
+      <value>false</value>
+    </param>
+
+    <param>
+      <name>up</name>
+      <value>RED</value>
+      <value>BLACK</value>
+    </param>
+    <!--
+      #init_pair(0,  Colour::BLACK,   Colour::BLACK)
+      #init_pair(1,  Colour::RED,     Colour::BLACK)
+      #init_pair(2,  Colour::GREEN,   Colour::BLACK)
+      #init_pair(3,  Colour::YELLOW,  Colour::BLACK)
+      #init_pair(4,  Colour::BLUE,    Colour::BLACK)
+      #init_pair(5,  Colour::MAGENTA, Colour::BLACK)
+      #init_pair(6,  Colour::CYAN,    Colour::BLACK)
+      #init_pair(7,  Colour::WHITE,   Colour::BLACK)
+    -->
+    <param>
+      <name>down</name>
+      <value>GREEN</value>
+      <value>BLACK</value>
+    </param>
+
+    <param>
+      <name>alert_line_color</name>
+      <value>YELLOW</value>
+    </param>
+
+    <param>
+      <name>browser</name>
+      <value>/usr/bin/google-chrome --app=file://%s</value>
+    </param>
+
+    <param>
+      <name>external_info_url</name>
+      <value>http://finance.sina.com.cn/realstock/company/@URL@/nc.shtml</value>
+    </param>
+
+     <param>
+      <name>local_info_url</name>
+      <value>/data/depot/share/vs/data/report_own/choose</value>
+    </param>
+
+    <param>
+      <name>editor</name>
+      <value>/usr/bin/gedit</value>
+    </param>
+
+  </config>
+
+  <watch>
+    <group>
+      <name>flag</name>
+      <stock>
+        <id>sh000001</id>
+        <name>上证综指</name>
+      </stock>
+      <stock>
+        <id>sh601318</id>
+        <name>中国平安</name>
+      </stock>
+      <stock>
+        <id>sh601111</id>
+        <name>中国国航</name>
+      </stock>
+      <stock>
+        <id>sh601600</id>
+        <name>中国铝业</name>
+      </stock>
+      <stock>
+        <id>sz000002</id>
+        <name>万科A</name>
+      </stock>
+      <stock>
+        <id>sh601898</id>
+        <name>中煤能源</name>
+
+      </stock>
+      <stock>
+        <id>sh600000</id>
+        <name>浦发银行</name>
+      </stock>
+      <stock>
+        <id>sh600019</id>
+        <name>宝钢股份</name>
+      </stock>
+      <stock>
+        <id>sh601857</id>
+        <name>中国石油</name>
+      </stock>
+
+     <stock>
+        <id>sh600547</id>
+        <name>山东黄金</name>
+      </stock>
+
+
+    </group>
+
+    <group>
+      <name>own</name>
+
+      <stock>
+        <id>sh600036</id>
+        <name>招商银行</name>
+        <condition><![CDATA[ stock.price > 12.5 && stock.high < 13 ]]></condition>
+		<condition><![CDATA[ @once@ stock.low < 12.8 ]]></condition>
+      </stock>
+      <stock>
+        <id>sh601919</id>
+        <name>中国远洋</name>
+        <cost>10.1%</cost>
+      </stock>
+      <stock>
+        <id>sh600005</id>
+        <name>武钢</name>
+        <cost>6.7</cost>
+      </stock>
+      <stock>
+        <id>sh600256</id>
+        <name>广汇股份</name>
+
+        <condition><![CDATA[ stock.price > 100 && stock.high < 50 ]]></condition>
+		<condition><![CDATA[ @once@ stock.low < 5 ]]></condition>
+      </stock>
+      <stock>
+        <id>sz002139</id>
+        <name>拓邦股份</name>
+
+      </stock>
+      <stock>
+        <id>sh600059</id>
+        <name>古越龙山</name>
+      </stock>
+      <stock>
+        <id>sz002144</id>
+        <name>宏达高科</name>
+        <condition><![CDATA[ @once@ stock.price  < 16 ]]></condition>
+      </stock>
+      <stock>
+        <id>sz002045</id>
+        <name>广州国光</name>
+      </stock>
+      <stock>
+        <id>sz000751</id>
+        <name>锌业</name>
+        <condition><![CDATA[ stock.price  < 13 ]]></condition>
+      </stock>
+
+    </group>
+
+    <group>
+      <name>watch</name>
+
+      <stock>
+        <id>sz002129</id>
+        <name>中环股份</name>
+      </stock>
+      <stock>
+        <id>sh600527</id>
+        <name>江南高纤</name>
+      </stock>
+
+      <stock>
+        <id>sh600605</id>
+        <name>汇通能源</name>
+      </stock>
+      <stock>
+        <id>sz002009</id>
+        <name>天奇股份</name>
+      </stock>
+      <stock>
+        <id>sz000951</id>
+        <name>中国重汽</name>
+      </stock>
+      <stock>
+        <id>sh600518</id>
+        <name>康美药业</name>
+      </stock>
+      <stock>
+        <id>sz002157</id>
+        <name>正邦科技</name>
+      </stock>
+      <stock>
+        <id>sh600201</id>
+        <name>金宇集团</name>
+      </stock>
+      <stock>
+        <id>sh600605</id>
+        <name>汇通能源</name>
+      </stock>
+      <stock>
+        <id>sz000061</id>
+        <name>农产品</name>
+        <desc>desc</desc>
+      </stock>
+      <stock>
+        <id>sz002011</id>
+        <name>盾安环保</name>
+      </stock>
+      <stock>
+        <id>sz002054</id>
+        <name>德美化工</name>
+      </stock>
+      <stock>
+        <id>sz002097</id>
+        <name>山河智能</name>
+        <star>*</star>
+      </stock>
+      <stock>
+        <id>sh600590</id>
+        <name>泰豪科技</name>
+        <star>*</star>
+      </stock>
+      <stock>
+        <id>sz002156</id>
+        <name>通富微电</name>
+        <star>*</star>
+      </stock>
+      <stock>
+        <id>sz002184</id>
+        <name>海得控制</name>
+        <star>*</star>
+      </stock>
+      <stock>
+        <id>sh600525</id>
+        <name>长园集团</name>
+        <star>*</star>
+      </stock>
+      <stock>
+        <id>sz002010</id>
+        <name>传化股份</name>
+        <star>*</star>
+      </stock>
+    </group>
+
+  </watch>
+</cs>

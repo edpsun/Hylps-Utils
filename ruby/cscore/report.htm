@@ -1,0 +1,802 @@
+<html>
+<head>
+<title>report.html</title>
+<meta   http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="res/jquery.min.js"   language="javascript" type="text/javascript"></script>
+<script src="res/cs.js"           language="javascript" type="text/javascript"></script>
+<meta   http-equiv="refresh"      content="10">
+<link   href="res/cs.css"  type="text/css" rel="stylesheet">
+</head>
+<body>
+   <table>
+      <tr id ='st_header' st_id='&nbsp;' st_name='&nbsp;' class='st_header'>
+        <td class='serial_id'>id</td>
+        <td class='stock_name' title='&nbsp;'>name</td>
+        <td>p</td>
+        <td>&nbsp;</td>
+        <td>pct</td>
+        <td>incr</td>
+        <td>l</td>
+        <td>h</td>
+        <td>last</td>
+        <td></td>
+        <td>ppct</td>
+        <td>extra</td>
+      </tr>
+      <tr id ='1' st_id='000001' st_name='上证指数' class='st_down'>
+        <td class='serial_id'>1</td>
+        <td class='stock_name' title='000001'>shang.zheng.zhi.shu</td>
+        <td>2281.45</td>
+        <td></td>
+        <td>-0.51%</td>
+        <td>-11.68</td>
+        <td>2276.71</td>
+        <td>2306.88</td>
+        <td>2293.13</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='2' st_id='000300' st_name='沪深300' class='st_down'>
+        <td class='serial_id'>2</td>
+        <td class='stock_name' title='000300'>hu.shen.300</td>
+        <td>2524.33</td>
+        <td></td>
+        <td>-0.7%</td>
+        <td>-17.85</td>
+        <td>2520.41</td>
+        <td>2559.13</td>
+        <td>2542.18</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='3' st_id='399001' st_name='深证成指' class='st_down'>
+        <td class='serial_id'>3</td>
+        <td class='stock_name' title='399001'>shen.zheng.cheng.zhi</td>
+        <td>9707.18</td>
+        <td></td>
+        <td>-0.5%</td>
+        <td>-48.46</td>
+        <td>9685.34</td>
+        <td>9843.9</td>
+        <td>9755.64</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='4' st_id='399005' st_name='中小板指' class='st_down'>
+        <td class='serial_id'>4</td>
+        <td class='stock_name' title='399005'>zhong.xiao.ban.zhi</td>
+        <td>4509.49</td>
+        <td></td>
+        <td>-0.58%</td>
+        <td>-26.37</td>
+        <td>4503.31</td>
+        <td>4568.5</td>
+        <td>4535.86</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='5' st_id='601318' st_name='中国平安' class='st_up'>
+        <td class='serial_id'>5</td>
+        <td class='stock_name' title='601318'>zhong.guo.ping.an</td>
+        <td>41.1</td>
+        <td></td>
+        <td>0.05%</td>
+        <td>0.02</td>
+        <td>40.95</td>
+        <td>41.85</td>
+        <td>41.08</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='6' st_id='601600' st_name='中国铝业' class='st_down'>
+        <td class='serial_id'>6</td>
+        <td class='stock_name' title='601600'>zhong.guo.lv.ye</td>
+        <td>6.57</td>
+        <td></td>
+        <td>-0.45%</td>
+        <td>-0.03</td>
+        <td>6.57</td>
+        <td>6.69</td>
+        <td>6.6</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='7' st_id='000002' st_name='万科Ａ　' class='st_down'>
+        <td class='serial_id'>7</td>
+        <td class='stock_name' title='000002'>wan.ke</td>
+        <td>8.92</td>
+        <td></td>
+        <td>-0.45%</td>
+        <td>-0.04</td>
+        <td>8.84</td>
+        <td>9.16</td>
+        <td>8.96</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='8' st_id='601898' st_name='XD中煤能' class='st_down'>
+        <td class='serial_id'>8</td>
+        <td class='stock_name' title='601898'>XDzhong.mei.neng</td>
+        <td>8.42</td>
+        <td></td>
+        <td>-1.41%</td>
+        <td>-0.12</td>
+        <td>8.4</td>
+        <td>8.62</td>
+        <td>8.54</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='9' st_id='600000' st_name='浦发银行' class='st_down'>
+        <td class='serial_id'>9</td>
+        <td class='stock_name' title='600000'>pu.fa.yin.xing</td>
+        <td>8.34</td>
+        <td></td>
+        <td>-2.57%</td>
+        <td>-0.22</td>
+        <td>8.31</td>
+        <td>8.53</td>
+        <td>8.56</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='10' st_id='600019' st_name='宝钢股份' class='st_stop'>
+        <td class='serial_id'>10</td>
+        <td class='stock_name' title='600019'>bao.gang.gu.fen</td>
+        <td>4.8</td>
+        <td></td>
+        <td>0.0%</td>
+        <td>0.0</td>
+        <td>4.78</td>
+        <td>4.83</td>
+        <td>4.8</td>
+        <td>==</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='11' st_id='601857' st_name='中国石油' class='st_down'>
+        <td class='serial_id'>11</td>
+        <td class='stock_name' title='601857'>zhong.guo.shi.you</td>
+        <td>9.11</td>
+        <td></td>
+        <td>-0.22%</td>
+        <td>-0.02</td>
+        <td>9.04</td>
+        <td>9.18</td>
+        <td>9.13</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+<tr class='st_separator'><td colspan='12'>&nbsp</td></tr>
+      <tr id ='13' st_id='600206' st_name='有研硅股' class='st_alert'>
+        <td class='serial_id'>13</td>
+        <td class='stock_name' title='600206'>you.yan.gui.gu</td>
+        <td>9.38</td>
+        <td>*</td>
+        <td>-0.32%</td>
+        <td>-0.03</td>
+        <td>9.33</td>
+        <td>9.65</td>
+        <td>9.41</td>
+        <td>↘ </td>
+        <td>-32.04%</td>
+        <td>YELLOW</td>
+      </tr>
+      <tr id ='14' st_id='600036' st_name='招商银行' class='st_alert'>
+        <td class='serial_id'>14</td>
+        <td class='stock_name' title='600036'>zhao.shang.yin.xing</td>
+        <td>10.92</td>
+        <td></td>
+        <td>-2.93%</td>
+        <td>-0.33</td>
+        <td>10.86</td>
+        <td>11.18</td>
+        <td>11.25</td>
+        <td>↘ ↘ ↘ </td>
+        <td>-26.0%</td>
+        <td>YELLOW</td>
+      </tr>
+      <tr id ='15' st_id='601919' st_name='中国远洋' class='st_down'>
+        <td class='serial_id'>15</td>
+        <td class='stock_name' title='601919'>zhong.guo.yuan.yang</td>
+        <td>4.69</td>
+        <td></td>
+        <td>-0.85%</td>
+        <td>-0.04</td>
+        <td>4.67</td>
+        <td>4.79</td>
+        <td>4.73</td>
+        <td>. </td>
+        <td>-68.96%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='16' st_id='600005' st_name='武钢股份' class='st_up'>
+        <td class='serial_id'>16</td>
+        <td class='stock_name' title='600005'>wu.gang.gu.fen</td>
+        <td>2.8</td>
+        <td></td>
+        <td>0.36%</td>
+        <td>0.01</td>
+        <td>2.78</td>
+        <td>2.82</td>
+        <td>2.79</td>
+        <td>. </td>
+        <td>-57.75%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='17' st_id='002139' st_name='拓邦股份' class='st_up'>
+        <td class='serial_id'>17</td>
+        <td class='stock_name' title='002139'>tuo.bang.gu.fen</td>
+        <td>6.72</td>
+        <td></td>
+        <td>0.15%</td>
+        <td>0.01</td>
+        <td>6.71</td>
+        <td>6.81</td>
+        <td>6.71</td>
+        <td>. </td>
+        <td>-68.45%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='18' st_id='002045' st_name='广州国光' class='st_down'>
+        <td class='serial_id'>18</td>
+        <td class='stock_name' title='002045'>yan.zhou.guo.guang</td>
+        <td>5.0</td>
+        <td></td>
+        <td>-1.57%</td>
+        <td>-0.08</td>
+        <td>4.99</td>
+        <td>5.14</td>
+        <td>5.08</td>
+        <td>. . </td>
+        <td>-51.29%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='19' st_id='002150' st_name='江苏通润' class='st_alert'>
+        <td class='serial_id'>19</td>
+        <td class='stock_name' title='002150'>jiang.su.tong.run</td>
+        <td>6.6</td>
+        <td></td>
+        <td>-0.15%</td>
+        <td>-0.01</td>
+        <td>6.53</td>
+        <td>6.65</td>
+        <td>6.61</td>
+        <td>↘ </td>
+        <td>-1.64%</td>
+        <td>YELLOW</td>
+      </tr>
+      <tr id ='20' st_id='002020' st_name='京新药业' class='st_down'>
+        <td class='serial_id'>20</td>
+        <td class='stock_name' title='002020'>jing.xin.yao.ye</td>
+        <td>12.58</td>
+        <td></td>
+        <td>-0.79%</td>
+        <td>-0.1</td>
+        <td>12.53</td>
+        <td>12.86</td>
+        <td>12.68</td>
+        <td>. </td>
+        <td>-5.7%</td>
+        <td>&nbsp;</td>
+      </tr>
+<tr class='st_separator'><td colspan='12'>&nbsp</td></tr>
+      <tr id ='22' st_id='600201' st_name='金宇集团' class='st_down'>
+        <td class='serial_id'>22</td>
+        <td class='stock_name' title='600201'>jin.yu.ji.tuan</td>
+        <td>14.89</td>
+        <td>*</td>
+        <td>-0.87%</td>
+        <td>-0.13</td>
+        <td>14.8</td>
+        <td>15.16</td>
+        <td>15.02</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='23' st_id='600290' st_name='华仪电气' class='st_down'>
+        <td class='serial_id'>23</td>
+        <td class='stock_name' title='600290'>hua.yi.dian.qi</td>
+        <td>6.86</td>
+        <td>*</td>
+        <td>-1.15%</td>
+        <td>-0.08</td>
+        <td>6.84</td>
+        <td>7.06</td>
+        <td>6.94</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='24' st_id='002011' st_name='盾安环境' class='st_up'>
+        <td class='serial_id'>24</td>
+        <td class='stock_name' title='002011'>dun.an.huan.jing</td>
+        <td>10.3</td>
+        <td>*</td>
+        <td>0.59%</td>
+        <td>0.06</td>
+        <td>10.25</td>
+        <td>10.73</td>
+        <td>10.24</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='25' st_id='600525' st_name='长园集团' class='st_down'>
+        <td class='serial_id'>25</td>
+        <td class='stock_name' title='600525'>chang.yuan.ji.tuan</td>
+        <td>6.97</td>
+        <td>*</td>
+        <td>-0.57%</td>
+        <td>-0.04</td>
+        <td>6.96</td>
+        <td>7.12</td>
+        <td>7.01</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='26' st_id='002097' st_name='山河智能' class='st_up'>
+        <td class='serial_id'>26</td>
+        <td class='stock_name' title='002097'>shan.he.zhi.neng</td>
+        <td>9.38</td>
+        <td>*</td>
+        <td>0.32%</td>
+        <td>0.03</td>
+        <td>9.32</td>
+        <td>9.67</td>
+        <td>9.35</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='27' st_id='002094' st_name='青岛金王' class='st_down'>
+        <td class='serial_id'>27</td>
+        <td class='stock_name' title='002094'>qing.dao.jin.wang</td>
+        <td>8.47</td>
+        <td></td>
+        <td>-1.17%</td>
+        <td>-0.1</td>
+        <td>8.45</td>
+        <td>8.72</td>
+        <td>8.57</td>
+        <td>. . </td>
+        <td>-3.64%</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='28' st_id='600059' st_name='古越龙山' class='st_down'>
+        <td class='serial_id'>28</td>
+        <td class='stock_name' title='600059'>gu.yue.long.shan</td>
+        <td>14.54</td>
+        <td></td>
+        <td>-2.74%</td>
+        <td>-0.41</td>
+        <td>14.39</td>
+        <td>15.12</td>
+        <td>14.95</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='29' st_id='002121' st_name='科陆电子' class='st_down'>
+        <td class='serial_id'>29</td>
+        <td class='stock_name' title='002121'>ke.lu.dian.zi</td>
+        <td>8.59</td>
+        <td></td>
+        <td>-0.35%</td>
+        <td>-0.03</td>
+        <td>8.54</td>
+        <td>8.78</td>
+        <td>8.62</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='30' st_id='600605' st_name='汇通能源' class='st_up'>
+        <td class='serial_id'>30</td>
+        <td class='stock_name' title='600605'>hui.tong.neng.yuan</td>
+        <td>8.63</td>
+        <td></td>
+        <td>2.37%</td>
+        <td>0.2</td>
+        <td>8.46</td>
+        <td>8.8</td>
+        <td>8.43</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='31' st_id='000636' st_name='风华高科' class='st_down'>
+        <td class='serial_id'>31</td>
+        <td class='stock_name' title='000636'>feng.hua.gao.ke</td>
+        <td>8.15</td>
+        <td></td>
+        <td>-0.37%</td>
+        <td>-0.03</td>
+        <td>8.13</td>
+        <td>8.35</td>
+        <td>8.18</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='32' st_id='600329' st_name='中新药业' class='st_down'>
+        <td class='serial_id'>32</td>
+        <td class='stock_name' title='600329'>zhong.xin.yao.ye</td>
+        <td>11.13</td>
+        <td></td>
+        <td>-2.37%</td>
+        <td>-0.27</td>
+        <td>11.1</td>
+        <td>11.51</td>
+        <td>11.4</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='33' st_id='600584' st_name='长电科技' class='st_down'>
+        <td class='serial_id'>33</td>
+        <td class='stock_name' title='600584'>chang.dian.ke.ji</td>
+        <td>5.02</td>
+        <td></td>
+        <td>-1.18%</td>
+        <td>-0.06</td>
+        <td>4.99</td>
+        <td>5.16</td>
+        <td>5.08</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+<tr class='st_separator'><td colspan='12'>&nbsp</td></tr>
+      <tr id ='35' st_id='002182' st_name='云海金属' class='st_down'>
+        <td class='serial_id'>35</td>
+        <td class='stock_name' title='002182'>yun.hai.jin.shu</td>
+        <td>9.95</td>
+        <td>*</td>
+        <td>-1.29%</td>
+        <td>-0.13</td>
+        <td>9.95</td>
+        <td>10.23</td>
+        <td>10.08</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='36' st_id='000507' st_name='珠海港　' class='st_up'>
+        <td class='serial_id'>36</td>
+        <td class='stock_name' title='000507'>zhu.hai.gang</td>
+        <td>9.55</td>
+        <td>*</td>
+        <td>0.53%</td>
+        <td>0.05</td>
+        <td>9.49</td>
+        <td>9.67</td>
+        <td>9.5</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='37' st_id='002184' st_name='海得控制' class='st_down'>
+        <td class='serial_id'>37</td>
+        <td class='stock_name' title='002184'>hai.de.kong.zhi</td>
+        <td>6.9</td>
+        <td>*</td>
+        <td>-5.48%</td>
+        <td>-0.4</td>
+        <td>6.88</td>
+        <td>7.28</td>
+        <td>7.3</td>
+        <td>. . . . . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='38' st_id='002156' st_name='通富微电' class='st_up'>
+        <td class='serial_id'>38</td>
+        <td class='stock_name' title='002156'>tong.fu.wei.dian</td>
+        <td>5.5</td>
+        <td>*</td>
+        <td>0.73%</td>
+        <td>0.04</td>
+        <td>5.34</td>
+        <td>5.55</td>
+        <td>5.46</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='39' st_id='002144' st_name='宏达高科' class='st_down'>
+        <td class='serial_id'>39</td>
+        <td class='stock_name' title='002144'>hong.da.gao.ke</td>
+        <td>13.29</td>
+        <td></td>
+        <td>-0.08%</td>
+        <td>-0.01</td>
+        <td>13.11</td>
+        <td>13.38</td>
+        <td>13.3</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='40' st_id='600256' st_name='广汇股份' class='st_up'>
+        <td class='serial_id'>40</td>
+        <td class='stock_name' title='600256'>yan.hui.gu.fen</td>
+        <td>15.18</td>
+        <td></td>
+        <td>1.88%</td>
+        <td>0.28</td>
+        <td>14.9</td>
+        <td>15.55</td>
+        <td>14.9</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='41' st_id='002129' st_name='中环股份' class='st_down'>
+        <td class='serial_id'>41</td>
+        <td class='stock_name' title='002129'>zhong.huan.gu.fen</td>
+        <td>13.59</td>
+        <td></td>
+        <td>-4.43%</td>
+        <td>-0.63</td>
+        <td>13.01</td>
+        <td>14.4</td>
+        <td>14.22</td>
+        <td>. . . . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='42' st_id='600605' st_name='汇通能源' class='st_up'>
+        <td class='serial_id'>42</td>
+        <td class='stock_name' title='600605'>hui.tong.neng.yuan</td>
+        <td>8.63</td>
+        <td></td>
+        <td>2.37%</td>
+        <td>0.2</td>
+        <td>8.46</td>
+        <td>8.8</td>
+        <td>8.43</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='43' st_id='000951' st_name='中国重汽' class='st_up'>
+        <td class='serial_id'>43</td>
+        <td class='stock_name' title='000951'>zhong.guo.zhong.qi</td>
+        <td>12.75</td>
+        <td></td>
+        <td>1.03%</td>
+        <td>0.13</td>
+        <td>12.63</td>
+        <td>13.05</td>
+        <td>12.62</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='44' st_id='600518' st_name='康美药业' class='st_up'>
+        <td class='serial_id'>44</td>
+        <td class='stock_name' title='600518'>kang.mei.yao.ye</td>
+        <td>12.85</td>
+        <td></td>
+        <td>1.02%</td>
+        <td>0.13</td>
+        <td>12.7</td>
+        <td>13.02</td>
+        <td>12.72</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+<tr class='st_separator'><td colspan='12'>&nbsp</td></tr>
+      <tr id ='46' st_id='600297' st_name='美罗药业' class='st_down'>
+        <td class='serial_id'>46</td>
+        <td class='stock_name' title='600297'>mei.luo.yao.ye</td>
+        <td>6.02</td>
+        <td></td>
+        <td>-0.66%</td>
+        <td>-0.04</td>
+        <td>6.02</td>
+        <td>6.15</td>
+        <td>6.06</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='47' st_id='000798' st_name='中水渔业' class='st_down'>
+        <td class='serial_id'>47</td>
+        <td class='stock_name' title='000798'>zhong.shui.yu.ye</td>
+        <td>7.15</td>
+        <td></td>
+        <td>-2.72%</td>
+        <td>-0.2</td>
+        <td>7.1</td>
+        <td>7.44</td>
+        <td>7.35</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='48' st_id='002073' st_name='软控股份' class='st_up'>
+        <td class='serial_id'>48</td>
+        <td class='stock_name' title='002073'>ruan.kong.gu.fen</td>
+        <td>10.55</td>
+        <td></td>
+        <td>0.48%</td>
+        <td>0.05</td>
+        <td>10.46</td>
+        <td>10.7</td>
+        <td>10.5</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='49' st_id='002185' st_name='华天科技' class='st_up'>
+        <td class='serial_id'>49</td>
+        <td class='stock_name' title='002185'>hua.tian.ke.ji</td>
+        <td>8.52</td>
+        <td></td>
+        <td>2.04%</td>
+        <td>0.17</td>
+        <td>8.5</td>
+        <td>8.84</td>
+        <td>8.35</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='50' st_id='002206' st_name='海利得　' class='st_down'>
+        <td class='serial_id'>50</td>
+        <td class='stock_name' title='002206'>hai.li.de</td>
+        <td>7.16</td>
+        <td></td>
+        <td>-0.14%</td>
+        <td>-0.01</td>
+        <td>7.14</td>
+        <td>7.32</td>
+        <td>7.17</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='51' st_id='002138' st_name='顺络电子' class='st_down'>
+        <td class='serial_id'>51</td>
+        <td class='stock_name' title='002138'>shun.luo.dian.zi</td>
+        <td>9.57</td>
+        <td></td>
+        <td>-0.21%</td>
+        <td>-0.02</td>
+        <td>9.53</td>
+        <td>9.8</td>
+        <td>9.59</td>
+        <td>. </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='52' st_id='600975' st_name='新五丰　' class='st_down'>
+        <td class='serial_id'>52</td>
+        <td class='stock_name' title='600975'>xin.wu.feng</td>
+        <td>9.05</td>
+        <td></td>
+        <td>-2.37%</td>
+        <td>-0.22</td>
+        <td>9.01</td>
+        <td>9.35</td>
+        <td>9.27</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='53' st_id='600114' st_name='东睦股份' class='st_down'>
+        <td class='serial_id'>53</td>
+        <td class='stock_name' title='600114'>dong.mu.gu.fen</td>
+        <td>10.75</td>
+        <td></td>
+        <td>-1.38%</td>
+        <td>-0.15</td>
+        <td>10.71</td>
+        <td>11.06</td>
+        <td>10.9</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='54' st_id='002023' st_name='海特高新' class='st_down'>
+        <td class='serial_id'>54</td>
+        <td class='stock_name' title='002023'>hai.te.gao.xin</td>
+        <td>8.67</td>
+        <td></td>
+        <td>-1.59%</td>
+        <td>-0.14</td>
+        <td>8.67</td>
+        <td>9.01</td>
+        <td>8.81</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='55' st_id='600262' st_name='北方股份' class='st_down'>
+        <td class='serial_id'>55</td>
+        <td class='stock_name' title='600262'>bei.fang.gu.fen</td>
+        <td>13.38</td>
+        <td></td>
+        <td>-1.69%</td>
+        <td>-0.23</td>
+        <td>13.36</td>
+        <td>13.71</td>
+        <td>13.61</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='56' st_id='600960' st_name='渤海活塞' class='st_down'>
+        <td class='serial_id'>56</td>
+        <td class='stock_name' title='600960'>bo.hai.huo.sai</td>
+        <td>11.25</td>
+        <td></td>
+        <td>-1.83%</td>
+        <td>-0.21</td>
+        <td>11.22</td>
+        <td>11.6</td>
+        <td>11.46</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='57' st_id='600152' st_name='维科精华' class='st_down'>
+        <td class='serial_id'>57</td>
+        <td class='stock_name' title='600152'>wei.ke.jing.hua</td>
+        <td>7.26</td>
+        <td></td>
+        <td>-2.68%</td>
+        <td>-0.2</td>
+        <td>7.07</td>
+        <td>7.57</td>
+        <td>7.46</td>
+        <td>. . . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='58' st_id='600527' st_name='江南高纤' class='st_down'>
+        <td class='serial_id'>58</td>
+        <td class='stock_name' title='600527'>jiang.nan.gao.xian</td>
+        <td>8.56</td>
+        <td></td>
+        <td>-1.38%</td>
+        <td>-0.12</td>
+        <td>8.47</td>
+        <td>8.81</td>
+        <td>8.68</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id ='59' st_id='601111' st_name='中国国航' class='st_up'>
+        <td class='serial_id'>59</td>
+        <td class='stock_name' title='601111'>zhong.guo.guo.hang</td>
+        <td>6.29</td>
+        <td></td>
+        <td>1.29%</td>
+        <td>0.08</td>
+        <td>6.22</td>
+        <td>6.36</td>
+        <td>6.21</td>
+        <td>. . </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+<tr class='st_message'><td colspan='12'> [Running]  UT: 19:05:50       Interval: 20</td></tr>
+   </table>
+</body></html>

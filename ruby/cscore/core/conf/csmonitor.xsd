@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://hylps.cs/csmonitor" xmlns:tns="http://hylps.cs/csmonitor" elementFormDefault="qualified">
+
+    <element name="cs" type="tns:csType"></element>
+    
+    <complexType name="csType">
+    	<sequence>
+            <element name="version" type="string" maxOccurs="1" minOccurs="1"></element>
+            <element name="config" type="tns:configType" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="watch" type="tns:watchType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+
+    	</sequence>
+    </complexType>
+
+    <complexType name="configType">
+    	<sequence>
+    		<element name="param" type="tns:paramType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="watchType">
+    	<sequence>
+    		<element name="group" type="tns:groupType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="paramType">
+    	<sequence>
+    		<element name="name" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="value" type="string" maxOccurs="unbounded"
+    			minOccurs="1">
+    		</element>
+    		<element name="desc" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="groupType">
+    	<sequence>
+    		<element name="name" type="string" maxOccurs="1" minOccurs="1"></element>
+            <element name="desc" type="string" maxOccurs="1" minOccurs="0"></element>
+            <element name="stock" type="tns:stockType"
+    			maxOccurs="unbounded" minOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="stockType">
+    	<sequence>
+    		<element name="id" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="name" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+            <element name="desc" type="string" maxOccurs="1" minOccurs="0"></element>
+            <element name="star" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+            <element name="cost" type="string" maxOccurs="1" minOccurs="0"></element>
+            <element name="cost_warn" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="condition" type="string"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>

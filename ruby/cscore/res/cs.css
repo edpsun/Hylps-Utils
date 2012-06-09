@@ -1,0 +1,41 @@
+BODY {
+    FONT-SIZE: 12px;
+    MARGIN: 0px;
+    padding: 0px;
+    /*FONT-FAMILY: Arial, Verdana, Geneva, helvetica, sans-serif;*/
+    /*font-family: Tahoma,Verdana,Helvetica,sans-serif;*/
+    BACKGROUND: #000;
+    color:#2CCC03;
+}
+
+td {
+    padding: 1px 10px 1px 15px;
+    border-right: 1px;
+}
+
+.st_header{
+    color:#3465A4;
+}
+
+.st_up{
+    color:#AD7FA8;
+}
+
+.st_down{
+    color:#4E9A06;
+}
+
+.st_stop{
+    color:#BABDB6;
+}
+
+.st_alert{
+    color:#8F5902;
+}
+
+.st_separator{
+}
+
+.st_message{
+    color:#8F5902;
+}
