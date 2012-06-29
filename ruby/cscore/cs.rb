@@ -9,6 +9,7 @@ $log.info("[INFO] CS running debug mode") if CS.debug_mode?
 
 $CS_HOME=File.dirname(__FILE__)
 $report = $CS_HOME +'/report.htm'
+$conky_report="/tmp/conky_st.data"
 
 ## init controller
 controller = CS::Controller.new
@@ -30,10 +31,19 @@ def show_more_info_from_browser (browser)
   return if browser.nil?
 
   cmd =sprintf(browser,File.absolute_path($report))
-
+  puts cmd
   $log.info cmd
   Thread.new(cmd) do |cmd|
     IO.popen(cmd)
+    
+    while line = gets
+        line = line.strip
+        if line.eql?('exit') || line.eql?('e') || line.eql?('E')
+            exit
+        end
+        IO.popen(cmd)
+        
+    end
   end
 end
 
@@ -56,6 +66,10 @@ loop do
       report = CS::HtmlReport.new(data_pair,cm, $report)
       report.analyze
       report.generate
+
+      conky_report = CS::ConkyReport.new(data_pair,cm, $conky_report)
+      conky_report.analyze
+      conky_report.generate
       puts msg
 
       if(show_1st_time)
@@ -65,6 +79,7 @@ loop do
       show_1st_time = false
     else
       puts " [Closed ] " + msg
+      File.delete $conky_report if File.exist? $conky_report
     end
   rescue Exception => e
     puts e

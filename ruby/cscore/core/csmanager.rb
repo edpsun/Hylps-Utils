@@ -278,7 +278,8 @@ module CS
 
         stock.id = id
         stock.name = infos[0]
-        stock.pyname = @pinyin.to_pinyin(stock.name, separator = '.');
+        stock.pyname = @pinyin.to_pinyin(stock.name, separator = '.')
+        stock.abbrname=@pinyin.to_pinyin_abbr(stock.name)
           #stock.infos = infos
 
         Field_Mapping.each do |k, vs|

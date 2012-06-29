@@ -31,7 +31,7 @@ Colour::BLACK) #init_pair(7, Colour::WHITE, Colour::BLACK) -->
         </param>
         <param>
             <name>browser</name>
-            <value>/usr/bin/google-chrome --app=file://%s</value>
+            <value>/usr/bin/google-chrome --user-data-dir=/data/depot/app_data/no_back/chrome --app=file://%s</value>
         </param>
         <param>
             <name>external_info_url</name>

@@ -19,8 +19,9 @@ module CS
     eos
 
     FOOTER ='</body></html>'
+
     def HtmlUtils.get_html_header(css)
-      sprintf(HEADER,css)
+      sprintf(HEADER, css)
     end
 
     def HtmlUtils.get_html_footer
@@ -42,20 +43,20 @@ module CS
       @st_data_list << get_header
       @data.each do |st|
         i = i+1
-        @st_data_list << (format_st_data i, st )
+        @st_data_list << (format_st_data i, st)
       end
     end
 
     def get_header
-      sprintf(ST_LINE_PATTERN,'st_header','&nbsp;','&nbsp;','st_header', 'id','&nbsp;', :name, :p, '&nbsp;', :pct, :incr, \
-      :l, :h, :last, '',:ppct,:extra)
+      sprintf(ST_LINE_PATTERN, 'st_header', '&nbsp;', '&nbsp;', 'st_header', 'id', '&nbsp;', :name, :p, '&nbsp;', :pct, :incr, \
+      :l, :h, :last, '', :ppct, :extra)
     end
 
     def generate
-      file=File.open(@file,'w')
+      file=File.open(@file, 'w')
       file.puts(HtmlUtils.get_html_header(@cm.get_config_value('css_schema')))
 
-      file.puts("   <table>");
+      file.puts("   <table id='datatbl'>");
       @st_data_list.each do |l|
         file.puts l
       end
@@ -110,7 +111,7 @@ eos
         symbol = ". "* (os_st.incr_pct.to_int + 1)
       end
 
-      if(os_st.stock_config && os_st.stock_config.cost && os_st.stop != true)
+      if (os_st.stock_config && os_st.stock_config.cost && os_st.stop != true)
         cost = os_st.stock_config.cost.to_f
         cost = ((os_st.price - cost) * 100 /cost).round(2)
         profit_pct = cost.to_s + '%'
@@ -145,10 +146,125 @@ eos
       extra='&nbsp;' if extra==""
 
       real_id = os_st.id[2..-1]
-      str = sprintf(ST_LINE_PATTERN, i ,real_id , os_st.name, indicator, i,real_id, name, os_st.price, os_st.star, pct, os_st.increase, \
-      os_st.low, os_st.high, os_st.last_day, symbol,profit_pct,extra)
+      str = sprintf(ST_LINE_PATTERN, i, real_id, os_st.name, indicator, i, real_id, name, os_st.price, os_st.star, pct, os_st.increase, \
+      os_st.low, os_st.high, os_st.last_day, symbol, profit_pct, extra)
 
       str
     end
   end
+
+
+  class ConkyReport < Report
+    def initialize (_data, _cm, _f='conky_st.data')
+      @data = _data
+      @cm = _cm
+      @file = _f;
+      @st_data_list = ['do analyze first']
+    end
+
+    def analyze
+      @st_data_list = []
+      @st_data_list << get_header
+
+      own_list = @cm.get_list_in_group('own')
+      @st_data_list << (format_st_data GOTO_VALUES, HEADER_SEP)
+      for st in @data
+        if own_list.include? st.id
+          @st_data_list << get_data(st)
+        end
+      end
+    end
+
+    def get_header
+      format_st_data(GOTO_VALUES, HEADER_COLUMN)
+    end
+
+    def generate
+      file=File.open(@file, 'w')
+      @st_data_list.each do |l|
+        file.puts l
+      end
+      file.close
+    end
+
+    HEADER_COLUMN = [:n, :p, :pt, :dlt, :l, :h, :y, :*, :mpt, '']
+    HEADER_SEP=['---', '---', '---', '---', '---', '---', '---', '---', '---', '---']
+    GOTO_VALUES=[4, 40, 60, 60, 50, 50, 50, 60, 60, 0]
+
+    private
+    def get_data os_st
+      symbol = ''
+      indicator=' ' # U up, D down, S stop, E equal
+      if os_st.stop
+        symbol = "s=="
+        indicator = "st_stop"
+      elsif os_st.increase == 0
+        symbol = "=="
+        indicator = "st_stop"
+      else
+        if os_st.increase > 0
+          indicator = "st_up"
+          symbol = "."* (os_st.incr_pct.to_int + 1)
+        elsif os_st.increase < 0
+          indicator = "st_down"
+          symbol = "!"* (os_st.incr_pct.to_int + 1)
+        end
+      end
+
+      if (os_st.stock_config && os_st.stock_config.cost && os_st.stop != true)
+        cost = os_st.stock_config.cost.to_f
+        cost = ((os_st.price - cost) * 100 /cost).round(2)
+        profit_pct = cost.to_s + '%'
+
+        if cost < -8.5 && os_st.stock_config.cost_warn != 'false'
+          os_st.has_alert = true
+        end
+      else
+        profit_pct = ''
+      end
+
+      #if (@verbose || os_st.has_alert)
+      #  symbol = os_st.up == true ? symbol.gsub('.', '↗') :symbol.gsub('.', '↘')
+      #end
+
+      name = os_st.pyname
+      name = os_st.name if @verbose
+
+      pct = sprintf("%s%s%", (os_st.increase >= 0 ? '' :'-'), os_st.incr_pct)
+
+      cf_st = @cm.get_stock(os_st.id)
+
+      extra = ''
+      extra += "X" if cf_st && cf_st.skip_assert
+      if os_st.has_alert
+        alert_line_color = @cm.get_first_config_value('alert_line_color') || "BLUE"
+        extra += "#{alert_line_color}"
+        indicator = "st_alert"
+      end
+
+      d = [os_st.abbrname, os_st.price, pct, os_st.increase, os_st.low, os_st.high, os_st.last_day, symbol, profit_pct, '']
+      str = (format_st_data GOTO_VALUES, d)
+      str = "${color3}"+str+"${color}" if os_st.has_alert
+      str
+    end
+
+    def format_st_data gotos, data
+      i = 0
+      offs = 0
+      str = ""
+      for x in data
+        off = gotos[i]
+        if off > 0
+          offs += off
+        else
+          offs = 0
+        end
+
+        str += "${goto #{offs}}#{x}"
+        i+=1
+      end
+      str
+    end
+  end
+
 end

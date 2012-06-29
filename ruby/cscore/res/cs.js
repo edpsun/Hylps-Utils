@@ -14,4 +14,11 @@ function click_on_stock_name(event) {
 $(function(){
     $('.serial_id').attr('style', 'cursor: pointer;').bind("click", click_on_serial_id);
     $('.stock_name').attr('style', 'cursor: pointer;').bind("click", click_on_stock_name);
+    $('#datatbl tr').hover(
+        function() {
+            $(this).addClass("highlight");
+        },
+        function() {
+            $(this).removeClass("highlight");
+        });
 });
