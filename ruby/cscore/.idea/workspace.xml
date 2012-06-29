@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cs.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cs.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="47" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.5848624">
+            <state line="78" column="81" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/conf/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="52" selection-start="2944" selection-end="2944" vertical-scroll-proportion="0.0">
+            <state line="50" column="21" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="report.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/report.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="75" selection-start="6646" selection-end="6646" vertical-scroll-proportion="0.0">
+            <state line="184" column="79" selection-start="4757" selection-end="4757" vertical-scroll-proportion="0.4655582">
               <folding />
             </state>
           </provider>
@@ -139,13 +139,13 @@
         <option value="$PROJECT_DIR$/bin/debug.sh" />
         <option value="$PROJECT_DIR$/bin/cs_monitor.sh" />
         <option value="$PROJECT_DIR$/core/test/config.xml" />
-        <option value="$PROJECT_DIR$/core/conf/config.xml" />
         <option value="$PROJECT_DIR$/res/cs-light.css" />
         <option value="$PROJECT_DIR$/res/cs.css" />
         <option value="$PROJECT_DIR$/res/cs.js" />
         <option value="$PROJECT_DIR$/core/csmanager.rb" />
-        <option value="$PROJECT_DIR$/core/report.rb" />
         <option value="$PROJECT_DIR$/cs.rb" />
+        <option value="$PROJECT_DIR$/core/conf/config.xml" />
+        <option value="$PROJECT_DIR$/core/report.rb" />
       </list>
     </option>
   </component>
@@ -756,11 +756,6 @@
         <state line="21" column="20" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/conf/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="52" selection-start="2944" selection-end="2944" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/test/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="43" selection-start="1178" selection-end="1216" vertical-scroll-proportion="0.0" />
@@ -769,13 +764,6 @@
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/array.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1055" column="8" selection-start="39561" selection-end="39561" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/report.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="75" selection-start="6646" selection-end="6646" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs19/file.rb">
@@ -787,7 +775,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="47" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.5848624">
+        <state line="78" column="81" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/conf/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="21" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/report.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="79" selection-start="4757" selection-end="4757" vertical-scroll-proportion="0.4655582">
           <folding />
         </state>
       </provider>

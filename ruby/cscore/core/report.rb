@@ -164,14 +164,11 @@ eos
 
     def analyze
       @st_data_list = []
-      @st_data_list << get_header
-
       own_list = @cm.get_list_in_group('own')
-      @st_data_list << (format_st_data GOTO_VALUES, HEADER_SEP)
+      kpi_list = @cm.get_list_in_group('kpi')
+
       for st in @data
-        if own_list.include? st.id
-          @st_data_list << get_data(st)
-        end
+        @st_data_list << get_data(st) if (own_list.include?(st.id) or kpi_list.include?(st.id))
       end
     end
 
@@ -181,15 +178,18 @@ eos
 
     def generate
       file=File.open(@file, 'w')
+      file.puts get_header
+      file.puts (format_st_data GOTO_VALUES, HEADER_SEP)
       @st_data_list.each do |l|
         file.puts l
+        file.puts "\n"
       end
       file.close
     end
 
     HEADER_COLUMN = [:n, :p, :pt, :dlt, :l, :h, :y, :*, :mpt, '']
     HEADER_SEP=['---', '---', '---', '---', '---', '---', '---', '---', '---', '---']
-    GOTO_VALUES=[4, 40, 60, 60, 50, 50, 50, 60, 60, 0]
+    GOTO_VALUES=[4, 40, 60, 60, 60, 60, 60, 60, 60, 0]
 
     private
     def get_data os_st

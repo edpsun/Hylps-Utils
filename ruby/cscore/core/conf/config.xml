@@ -48,7 +48,7 @@ Colour::BLACK) #init_pair(7, Colour::WHITE, Colour::BLACK) -->
     </config>
     <watch>
         <group>
-            <name>flag</name>
+            <name>kpi</name>
             <stock>
                 <id>sh000001</id>
                 <name>上证综指</name>
@@ -65,6 +65,9 @@ Colour::BLACK) #init_pair(7, Colour::WHITE, Colour::BLACK) -->
                 <id>sz399005</id>
                 <name>中小板指</name>
             </stock>
+        </group>
+      <group>
+        <name>flag</name>
             <stock>
                 <id>sh601318</id>
                 <name>中国平安</name>
@@ -124,13 +127,6 @@ Colour::BLACK) #init_pair(7, Colour::WHITE, Colour::BLACK) -->
                 <cost>21.297</cost>
                 <cost_warn>false</cost_warn>
                 <condition><![CDATA[ stock.price > 15.9 ]]></condition>
-            </stock>
-            <stock>
-                <id>sz002045</id>
-                <name>广州国光</name>
-                <cost>10.264</cost>
-                <cost_warn>false</cost_warn>
-                <condition><![CDATA[ stock.price > 9 ]]></condition>
             </stock>
             <stock>
                 <id>sh600206</id>
