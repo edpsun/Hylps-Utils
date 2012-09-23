@@ -138,7 +138,7 @@ Colour::BLACK) #init_pair(7, Colour::WHITE, Colour::BLACK) -->
             <stock>
                 <id>sz002150</id>
                 <name>江苏通润</name>
-                <cost>6.71</cost>
+                <cost>6.62</cost>
                  <condition><![CDATA[ stock.price < 7.0 ]]></condition>
             </stock>
             
