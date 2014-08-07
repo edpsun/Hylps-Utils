@@ -30,7 +30,7 @@ public class HolderDataAnalyzer extends HolderAnalyzer {
 	HashMap<String, StockInfo> stockMap = new HashMap<String, StockInfo>();
 	ArrayList<AnalyzeVO> avoListChosen = new ArrayList<AnalyzeVO>();
 
-	ArrayList<AnalyzeVO> avoListCannon = new ArrayList<AnalyzeVO>();
+    ArrayList<AnalyzeVO> avoListCannon = new ArrayList<AnalyzeVO>();
 
 	StockInfo stockInfo = null;
 
